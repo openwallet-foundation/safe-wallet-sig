@@ -77,10 +77,10 @@ Example:
 
 | **Category**           | **Score** |
 | ---------------------- | --------- |
-| Privacy                | ![4 stars](images/4-stars.png) |
-| Data Security          | ![3 stars](images/3-stars.png) |
-| Legislation Compliance | ![5 stars](images/5-stars.png) |
-| User Interface         | ![4 stars](images/4-stars.png) |
-
+| Privacy                | <img alt="4 stars" src="images/4-stars.png" width=100px> |
+| Security               | <img alt="3 stars" src="images/3-stars.png" width=100px> |
+| Legislation Compliance | <img alt="5 stars" src="images/5-stars.png" width=100px> |
+| User Interface         | <img alt="4 stars" src="images/4-stars.png" width=100px> |
+| Accountability         | <img alt="2 stars" src="images/2-stars.png" width=100px> |
 
 **NOTE**: In order to be a "safe" wallet, the context of how that wallet will be used should be considered. Specifically, one wallet might heavily favor the "Legislation Compliance" category, while another may favor "Privacy". 
