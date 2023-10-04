@@ -8,7 +8,9 @@ Due to the technical complexities of the cryptography and protocols used, there 
 
 The intention of this SIG is to ensure that everyone working on digital wallets, whether technical, legal, or commercial, knows what these dangers are and how to avoid them. It will also provide vital tools that will become the de-facto way to determine how "safe" the new breed of digital wallets is and be able to compare them effectively.
 
-This guide is a non-technical, plain English (minimal jargon) document detailing the best practices for digital wallets for preventing correlation and profiling of users and ensuring they are "safe". This guide will include explanations of how correlation and profiling could occur with "real world" examples and how a bad actor might utilise vulnerabilities. We begin the document by first defining "safe" by looking at defining a number of categories that need to be considered. The second part of the document will provide granular best practices for "safe" digital wallets for each of these categories.
+This guide is a non-technical, plain English (minimal jargon) document detailing the best practices for digital wallets for preventing correlation and profiling of users and ensuring they are "safe". This guide will include explanations of how correlation and profiling could occur with "real world" examples and how a bad actor might utilise vulnerabilities. The audience of this guide is legislators, politicians, journalists, members of the public, and advisors. Our hope is that this guide will educate the readers about what “good” looks like and how to recognise it.
+
+We begin the document by first defining "safe" by looking at defining a number of categories that need to be considered. The second part of the document will provide granular best practices for "safe" digital wallets for each of these categories. Lastly, we will look at a scoring mechanism to help people understand how well a given wallet meets the best practices, and in turn, how "safe" the wallet is for a given use case.
 
 ## Categories
 
@@ -64,3 +66,21 @@ Topics to include:
 ### Accountability
 Topics to include:
 - who do you sue if something goes wrong?
+
+## Best Practices
+This section will define the best practices for the each of the above categories.
+
+## Scoring Mechanism
+This section looks at a scoring mechanism that will allow people to understand how well a given wallet meets the best practices, and in turn, how "safe" the wallet is for a given use case.
+
+Example:
+
+| **Category**           | **Score** |
+| ---------------------- | --------- |
+| Privacy                | ![4 stars](images/4-stars.png) |
+| Data Security          | ![3 stars](images/3-stars.png) |
+| Legislation Compliance | ![5 stars](images/5-stars.png) |
+| User Interface         | ![4 stars](images/4-stars.png) |
+
+
+**NOTE**: In order to be a "safe" wallet, the context of how that wallet will be used should be considered. Specifically, one wallet might heavily favor the "Legislation Compliance" category, while another may favor "Privacy". 
