@@ -33,6 +33,37 @@ Topics to include:
 ### Holder binding
 Topics to include
 - how to confirm the person who obtained a credential is the one presenting it
+- 
+#### Content
+
+Wallets are like a toolbox looking to be filled with different tools. Different tools that the citizen will use depending on his needs. 
+
+When we speak about digital identity those tools are the so-called Credentials, each one telling a different aspect of the user: driving license, library membership, etc. Among them one kind of credentials stands out: the personal information credentials. This personal information credentials can be seen as the digital twin of a passport, national ID or any other kind of official ID form and needs to be treated carefully as it will represent the user himself. 
+
+There are two main ways for receiving these personal information credentials: either setup along with the wallet (this is called early binding) or added later when the user requests it to a government agency (this is called late binding). 
+
+The main difference between early and late binding, apart from the moment when the credentials are issued is that late binding allows the user to enjoy the benefits of a wallet prior to having the first personal information credential issued. 
+
+When using the personal information credentials, the user faces a security risk: being impersonated by someone taking control of the wallet. The unlocking mechanism of the wallet may (or not) be enough to warrantee The main difference between early and late binding, apart from the moment when the credentials are issued is that late binding allows the user to enjoy the benefits of a wallet prior to having the first personal information credential issued. 
+
+When using the personal information credentials, the user faces a security risk: the unlocking mechanism of the wallet may not be enough to secure the use of the personal information credentials. Extra mechanism may be used to enhance security: additional PIN/Password, MFA or even using an external device. 
+
+Non evaluation criteria: 
+
+    - Early binding capable wallet 
+    - Late binding capable wallet 
+    - Both 
+
+Secure wallet evaluation criteria: 
+
+    - No extra security measures 0 pts 
+    - Extra PIN/ Password 1 pts 
+    - MFA 1 pts 
+    - External device 2 pts 
+    - In-person at government agency PIN/Password change only 2 pts
+    - Other methods (confirmation call or text) 1 pts
+
+These extra security steps should derive in an associated confirmation method that the verifier/relying party can double check.
 
 ### Legislation compliance
 Topics to include:
