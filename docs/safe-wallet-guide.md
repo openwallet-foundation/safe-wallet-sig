@@ -37,9 +37,22 @@ Topics to include
 ### Legislation compliance
 Topics to include:
 - What legislation exists?
-    - GDPR, CCPA
+
+| Regulation                              | Acronym | Year | Country |
+| --------------------------------------- | ------- | ---- | ------- |
+| General Data Protection Regulation      | GDPR    | 2018 | EU      |
+| California Consumer Privacy Act         | CCPA    | 2020 | US/CA   |
+| General Personal Data Protection Law    | LGPD    | 2020 | Brazil  |
+| Digital Charter Implementation Act 2022 | DCIA    | 2022 | Canada  |
+| Digital Personal Data Protection Act    | DPDPA   | 2024 | India   |
+
+- What regulations issues need to be addressed? 
 - Where does this legislation exist?
-- How much to rely on legislation vs. technical solutions
+- How much to rely on legislation vs. technical solutions?
+- Some of the identified legislative issues related to wallet based data exchanges are summarised below: 
+  - Legislations that organisations need to adhere to while processing data. E.g. Article 30 of the GDPR places an obligation on controllers and processors (organisatons, issuers/verifiers) to have in place within their organisations a detailed record ofactivities the organisation carries out which use personal data.
+  - Legislations that ensures the digital rights of the individuals are taken care of. E.g. The GDPR has a chapter on the rights of data subjects (individuals) which includes the right of access, the right to rectification, the right to erasure, the right to restrict processing, the right to data portability, the right to object and the right not to be subject to a decision based solely on automated processing.
+  - Article 7 (1) of GDPR states that in situations where processin of data is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data.
 
 ### Certification
 Topics to include:
@@ -51,7 +64,7 @@ Topics to include:
 Topics to include:
 - how well informed can the user be 
 - how does the user "feel" safe
-- consent
+- consent - Refer to the legislative issue raised regarding consent.
 
 ### Counterparties
 
@@ -104,8 +117,8 @@ This section looks at a scoring mechanism that will allow people to understand h
 
 Example:
 
-| **Category**           | **Score** |
-| ---------------------- | --------- |
+| **Category**           | **Score**                                                |
+| ---------------------- | -------------------------------------------------------- |
 | Privacy                | <img alt="4 stars" src="images/4-stars.png" width=100px> |
 | Security               | <img alt="3 stars" src="images/3-stars.png" width=100px> |
 | Legislation Compliance | <img alt="5 stars" src="images/5-stars.png" width=100px> |
