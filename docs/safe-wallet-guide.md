@@ -54,14 +54,43 @@ Topics to include:
 - consent
 
 ### Counterparties
-Topics to include:
-- How do you know who you are dealing with (is the issuer/verifier (or other holder) who they say they are)
-- How do you know that what they are asking for is OK
+
+A counterparty in this context is a person, organisation or thing to whom a digital wallet is connecting to in order to execute a transaction of some sort. The counterparty could be an issuer of credentials, an online shop requesting age verification, a police officer, or a passport e-gate.
+
+- Counterparty Identity Verification
+    - Does the wallet inform the user that the counterparty that they are interacting with is who they say they are? For example:
+        - If the user is being offered a new digital credential by an organisation, is the user able to quickly and easily determine that the organisation is legitimate?
+        - If the user is being asked to digitally sign a contract, can the user quickly ascertain that the requestor is who they say they are?
+        - Can the user proactively send a verification request to an organisation (or another user) to ask them to prove who they are?
+    - Is the user able to see several levels of detail about the counterparty? For example:
+        - Level 1: a visual confirmation (green tick style) that the counterparty has been vouched for by some authority.
+        - Level 2: detail about the counterparty’s identity, for example company name, registered address, company number, and who has vouched for them.
+        - Level 3: detail about the vouching that has taken place e.g. digital signature matches, vouching organisation process, Legal Entity Identifier details etc.
+-	Counterparty Action Verification
+    - Can the user quickly and easily determine that the counterparty is allowed to ask what they are asking, and if it is a reasonable request?
+        - Some data sharing transactions may be limited by regulation, restricting who is allowed to ask for what. Is this communicated to the user? 
+        - Does the wallet automatically reject illegal requests? If so, how does it know a specific request from a specific issuer is illegal in one specific jurisdiction and legal in another?
+        - Is a user able to determine that “Gerald’s Corner Shop” is not a legitimate issuer of driving licenses? How can a user know that a credential they are being offered is coming from a legitimate source?
+        - When not limited by regulation, are there common-sense limits to what should be shared? Is the wallet able to alert the user when it detects oversharing?
+    - How much hand-holding is provided to the user by the wallet to guide them through this new world of digital credentials?
 
 ### Audit
-Topics to include:
-- how a holder knows what they’ve done
-- could a court audit your wallet for criminal proceedings?
+
+Audit in this context is the ability of participants in a digital credential ecosystem to know what is happening in that ecosystem. It is tightly linked with the Privacy and Legislation Compliance topics. 
+
+Audit requirements and Privacy requirements can clash. Care will need to be taken to design a digital wallet that handles both in the best way. The balance user privacy and regulation is also an important topic, even more so when multiple competing regulations may be involved.
+
+- User Audit.
+    - Is a wallet user able to see all the transactions that they have carried out with their digital wallet?
+    - Can these transactions be used as proof of activity e.g. proof of purchase?
+    - Can they delete their own transaction list in an unrecoverable way?
+- Governance & Operational Audit
+    - If an ecosystem has one or more governance bodies, do they have tools that enable them to audit the correct operation of the ecosystem?
+        - For example, if a relying party is asking for more data than it is allowed to, can the governance body see proof of this to stop it happening again?
+- Legal Audit.
+    - Can a user prove to a legal authority that they have undertaken some action with their wallet i.e. can the wallet provide legally binding transaction evidence?
+    - Does a wallet satisfy local regulatory audit requirements for example can legal authorities examine the content and transaction history of a user’s wallet as part of a criminal investigation?
+    - Can a legal authority look at the transaction history of an issuer/verifier and prove that a user interacted with them without looking at the user’s wallet?
 
 ### Accountability
 Topics to include:
