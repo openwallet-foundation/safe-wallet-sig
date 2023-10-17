@@ -61,10 +61,44 @@ Topics to include:
 - who/what needs to be certified?
 
 ### User interface
-Topics to include:
-- how well informed can the user be 
-- how does the user "feel" safe
-- consent - Refer to the legislative issue raised regarding consent.
+
+#### UX rules
+
+- Intuitive navigation: The wallet should be easy to navigate, with clear and concise labels for all functions. Users should be able to quickly and easily find the information and features they need.
+- Visual cues: The wallet should use visual cues, such as icons and colors, to help users understand what they are doing. For example, a green check mark could be used to indicate that a transaction was successful.
+- Security features: The wallet should use the latest security features to protect users' data and funds. This could include features such as two-factor authentication, biometric login, and data encryption.
+- Transparency: The wallet should be transparent about its security features and how it protects users' data. This information should be easy to find and understand.
+- User feedback: The wallet should provide users with feedback on their actions. For example, the wallet should notify users when a transaction is successful or when there is a problem.
+
+#### Best practices
+
+- Use a strong and unique password. Your password should be at least 12 characters long and include a mix of upper and lowercase letters, numbers, and symbols. Do not use the same password for your digital wallet as for any other online accounts.
+- Enable multi-factor authentication (MFA). MFA adds an extra layer of security to your account by requiring you to enter a code from your phone in addition to your password when logging in.
+- Keep your device up to date. Software updates often include security patches, so it is important to keep your device up to date with the latest version of the operating system and security software.
+- Be careful about what links you click on and what apps you download. Phishing scams and malicious apps are common ways for attackers to steal your personal information and financial data. Only click on links from trusted sources and download apps from official app stores.
+- Monitor your account activity regularly. Review your account statements regularly to look for any unauthorized transactions. If you see something suspicious, contact your digital wallet provider immediately.
+
+In addition to these best practices, it is also important to be aware of the latest security threats and scams. For example, attackers are increasingly using social engineering techniques to trick users into revealing their personal information or clicking on malicious links. Be suspicious of any unsolicited contact from your digital wallet provider or other financial institutions.
+
+By following these tips, you can help keep your digital wallet safe and secure.
+
+#### Resources and References
+
+- UI/UX Design for Digital Wallets: Marrying Security with Intuitive Navigation | by Ethercess | Sep, 2023 | Medium
+https://medium.com/@ethercess/ui-ux-design-for-digital-wallets-marrying-security-with-intuitive-navigation-61acaa66a2c8 
+medium.com
+- The Role of UX/UI Design in Cryptocurrency Wallet Development | by Naeem Hasan | Oct, 2023 | Medium
+https://medium.com/@naeemhasan588/the-role-of-ux-ui-design-in-cryptocurrency-wallet-development-3f1fbe97b747 
+medium.com
+- 7 Best Practices For Enhancing Your Digital Wallet Security
+https://www.appknox.com/blog/best-practices-for-digital-wallet-security 
+www.appknox.com
+- Digital Wallet Design: Enhancing Your User Experience
+https://qubstudio.com/blog/digital-wallet-design/ 
+qubstudio.com
+- How to Improve Mobile UX with Digital Wallets
+https://cxl.com/blog/digital-wallets/ 
+cxl.com
 
 ### Counterparties
 
