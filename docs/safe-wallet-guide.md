@@ -30,11 +30,31 @@ Topics to include:
 
 ### Wallet locking and unlocking mechanisms
 
+As in all the systems the weakest link marks the security of the solution. In the case of the wallet it is usually the citizen the weakest link because he can tricked.
+Usually a wallet has several functions: storing attributes, signing documents, presenting the attributes to a verifier, etc.
+Those functions should be protected against malicious actors or user errors, that can be achieved with additional layers of protection and verifications.
+
+Unlock the wallet when activating it may have a metric depending on:
+- Complexity of the unlocking mechanism.
+  - Simple PIN, 1 point
+  - Complex password, 2 points
+  - MFA, +1 point
+  - External unlocking mechanism, like hardware key, 3 points
+- Frequency of the unlocking requirement
+  - Only while opening,1 point
+  - Each time the wallet loses focus, 2 points (this has to be reviewed for the cases that copy & paste is required)
+  - Each time the device (smartphone) is locked or suspended, 1 point
+  - 
+Multiple layers of unlocking. Whenever advanced or higher level of assurance operations require additional unlocking:
+  - No additional unlocking, 0 points
+  - PID and document signatures requires additional unlocking, 1 points
+  - Additional unlocking uses different PIN/Password, +1 point
+  - Wallet checks additional unlocking have not the same PIN/Password, +1 point
+    
+Biometrics
+  - Biometrics enabled for wallet unlocking, 1 point
+
 ### Holder binding
-Topics to include
-- how to confirm the person who obtained a credential is the one presenting it
-- 
-#### Content
 
 Wallets are like a toolbox looking to be filled with different tools. Different tools that the citizen will use depending on his needs. 
 
