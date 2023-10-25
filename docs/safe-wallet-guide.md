@@ -106,10 +106,27 @@ Topics to include:
   - Article 7 (1) of GDPR states that in situations where processin of data is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data.
 
 ### Certification
-Topics to include:
-- where is certification required?
-- which certification(s) are required?
-- who/what needs to be certified?
+> *Control text, we can remove it when we finish with the content of this section* 
+> 
+> Topics to include:
+> - where is certification required?
+> - which certification(s) are required?
+> - who/what needs to be certified?
+>
+
+Certification in the context of digital identity wallets relates to the formal evaluation of products according to standards such as Common Criteria. It is closely associated with the Legislation Compliance topic, since digital wallet regulations in some cases include specific certification requirements.
+- Compliance with regulations:
+  - Are there any regulations that require certification of digital wallets for the countries or regions in scope? (Example: The eIDAS2 regulation, where EUDI Wallet certification is mandatory.)
+  - If so, does the digital wallet comply with the national or regional certification requirements?
+- Components to be certified:
+  - Does the digital wallet mobile app have to be certified, and to which certification standard? If so, is the digital wallet certified? (Example: FITCEM certification.)
+  - Does the secure element in the mobile device have to be certified, and to which certification standard? If so, is the secure element certified? (Example: Common Criteria or GlobalPlatform certification.)
+  - Does the digital wallet backend have to be certified, and to which certification standard? If so, is the digital wallet backend certified? (Example: ISO 27001 audit.)
+  - Are there any other components in the digital wallet eco-system to be certified, and to which certification standard? If so, are the other components certified?  (Example: HSMs that are Common Criteria or FIPS 140-2 certified.)
+- Evidence of certification:
+  - Does the digital wallet provide evidence to the user that its certification is up to date? (Example: There could be information on the digital wallet’s screen that can be tapped on to get more details.)
+  - Is there a certification body (in the applicable country) that publishes lists of certified digital wallets?
+  - Does the certification body publish certificates or reports about the digital wallet certifications?
 
 ### User interface
 
