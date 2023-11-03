@@ -22,11 +22,29 @@ Topics to include:
 - Profiling prevention
 - Ensuring the wallet provider does not know what is contained in the wallet
 
+In the context of digital wallets, privacy primarily relates to the how a user’s activities are protected from unwanted observation, tracking and correlation. Digital wallets and credentials, and the protocols involved in their issuance and verification, introduce a new set of challenges that don’t exist in the world of physical (paper and plastic) credentials.
+
+-	Unique Identifiers
+    - Does the wallet avoid use of a holder-specific or wallet-specific unique identifier that gets shared, without holder choice, with every transaction in the transaction metadata?
+        - Such an identifier will be akin to a tracking beacon that allows all holder activities to be correlated across all usage. It would allow any colluding entities to correlate all activities of a holder.
+        - This is particularly dangerous when proxy verification services are used, that process verifications for many relying parties and will be able to see and track such an identifier and profile the behaviours of all holders.
+        - An example of such an identifier is a wallet serial number.
+    - Does the wallet prevent use of credentials that contain credential-specific unique identifiers in metadata that are shared, without user choice, in every transaction that uses that credential?
+        - While not as privacy impacting as a holder/wallet specific identifier, a credential-specific identifier in metadata that the user cannot avoid sharing will allow all use of that credential to be correlated.
+        - An example of a credential-specific identifier in metadata is a revocation index position or an issuer signature.
+-	Decoupling issuers and verifiers
+    - Does the wallet and its associated ecosystem prevent issuers from seeing where, when or why holders use their credentials?
+        - It is essential that issuers of credentials like governments and banks cannot track the use of those credentials. 
+        - If issuers can track the use of their credentials, it should be expected that they will.
+        - If they do, they will quickly build up profiles of the lives of their users/customers.
+        - An example of decoupling is preventing a verifier from contacting the issuer to check the revocation status of a credential. If this happened, the issuer would know the holder of the credential was using it at that issuer. This is also known as the “phone home” problem.
+
+
 ### Security
 Topics to include:
 - Data security
 - Backup and recovery process security
-- Key handling & management & custody
+- Key handling and management and custody
 
 ### Wallet locking and unlocking mechanisms
 
@@ -42,7 +60,7 @@ Unlock the wallet when activating it may have a metric depending on:
   - External unlocking mechanism, like hardware key, 3 points
 - Frequency of the unlocking requirement
   - Only while opening,1 point
-  - Each time the wallet loses focus, 2 points (this has to be reviewed for the cases that copy & paste is required)
+  - Each time the wallet loses focus, 2 points (this has to be reviewed for the cases that copy and paste is required)
   - Each time the device (smartphone) is locked or suspended, 1 point
   - 
 Multiple layers of unlocking. Whenever advanced or higher level of assurance operations require additional unlocking:
@@ -199,7 +217,7 @@ Audit requirements and Privacy requirements can clash. Care will need to be take
     - Is a wallet user able to see all the transactions that they have carried out with their digital wallet?
     - Can these transactions be used as proof of activity e.g. proof of purchase?
     - Can they delete their own transaction list in an unrecoverable way?
-- Governance & Operational Audit
+- Governance and Operational Audit
     - If an ecosystem has one or more governance bodies, do they have tools that enable them to audit the correct operation of the ecosystem?
         - For example, if a relying party is asking for more data than it is allowed to, can the governance body see proof of this to stop it happening again?
 - Legal Audit.
