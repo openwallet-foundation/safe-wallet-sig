@@ -103,6 +103,20 @@ Secure wallet evaluation criteria:
 
 These extra security steps should derive in an associated confirmation method that the verifier/relying party can double check.
 
+#### Biometrics in Holder binding
+
+Nowadays most of the ID documents have an electronic interface. From NFC to integrated chips these interfaces allow a form to access to the ID information in an electronic way.
+This is very convenient for a verification, and some of that electronic information is biometric information, so we can think on using the biometric information in the ID document to load it into a wallet.
+This biometric information in the wallet could lead to a safer holder binding so when an ID request comes the user could potentially use the biometrics in the device, match with the stored identity and send it to the verifier requesting it.
+Unfortunately, this is only safe if the verification is done in a verifier server, not in the wallet device. Why? Because the devices could be tampered, and the applications hacked. An application running in a user device could be modified so it will send the verifier an “Biometrics match” even if not. The proper way to perform biometrics verification is that the device directly sends the audio/video stream to a server, then the server matches the information with the electronic ID information (that is signed and cannot be tampered) and then decide if there is a match.
+Here comes the question: “I do use the biometrics in my device to access my bank account? Am I not safe?” Albeit if looks that the same procedure is happening indeed it is not. When you use the biometrics in your phone to access your bank account what happens is that your device is not sending the biometric information. Whenever you did configure the biometrics, your smartphone did store your bank account access details and only access them when your biometrics match with the ones stored in the device. Your bank (acting as a verifier) never has access to those biometrics. 
+There’s an evolution on this, usually related to strong costumer verification, when in addition to access to a service there’s a biometric (usually voice) authentication from your bank (like saying “I do authorize this transaction”): that is the first example. The server from your bank received the stream of data and process the biometrics, matching against the information they have from you.
+
+Biometrics linking evaluation criteria:
+-	Server side verification: 1 point
+-	Other: 0 point
+
+
 ### Legislation compliance
 Topics to include:
 - What legislation exists?
