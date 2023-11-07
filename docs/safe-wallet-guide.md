@@ -38,6 +38,17 @@ In the context of digital wallets, privacy primarily relates to the how a user�
         - If issuers can track the use of their credentials, it should be expected that they will.
         - If they do, they will quickly build up profiles of the lives of their users/customers.
         - An example of decoupling is preventing a verifier from contacting the issuer to check the revocation status of a credential. If this happened, the issuer would know the holder of the credential was using it at that issuer. This is also known as the “phone home” problem.
+-	Wallet provider privacy
+    - The developers and operators of digital wallets must not be able to observe or track transactions undertaken by holders.
+        - This is particularly important in the case of hybrid and pure cloud wallets where transactions are performed on the wallet operator’s infrastructure.
+        - Wallet operators must not be able to observe the content of backups that are held by those wallet providers.
+-	Credential exchange platform providers and proxy services.
+    - Organisations that provide the infrastructure that wallets connect to in order to issue or verify credentials (typically called credential exchange platforms) must not be able to examine the content, source or destination of wallet transactions.
+        - In many situations, such credential exchange platforms will need to “translate” from an encrypted credential envelope to/from clear text for integration with other systems such as customer onboarding systems.
+        - In this case, the credential exchange platform must manage the data in such a way that it is transient and not stored, observable or trackable to protect wallet holder privacy.
+    - Proxy services may provide credential issuance/verification services for many issuers and verifiers. In doing so they could observe and correlate wallet transactions across large ecosystems. 
+        - Proxy services must not observe, store and correlate wallet transactions.
+        - Holders should be informed that they are dealing with a proxy service rather than the true end issuer/verifier.
 
 
 ### Security
