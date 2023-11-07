@@ -254,6 +254,32 @@ Audit requirements and Privacy requirements can clash. Care will need to be take
 Topics to include:
 - who do you sue if something goes wrong?
 
+Counterparty identification and verification, audit, and wallet certification can all be for naught if the responsible parties cannot ultimately be held accountable. Like most Safe Wallet categories, requirements for accountability can be divided into: a) technical mechanisms (those that can be implemented with hardware, software, and protocols) and, b) governance mechanisms (those that must be implemented by humans following prescribed laws, regulation, policies and/or rules, including via [reputation systems](https://en.wikipedia.org/wiki/Reputation_system)).
+
+#### Checklist for Technical Accountability Mechanisms
+
+These are functions of a digital wallet required to produce what a court of law will consider [admissible evidence](https://en.wikipedia.org/wiki/Admissible_evidence) of the actions of the relevant parties in the case of harm or damage resulting from reliance on the wallet or its contents. Without such evidence, it would be all but impossible to hold specific parties accountable.
+
+1. **Does the wallet provide secure storage of cryptographic keys, credentials, and digital assets?** If a defense lawyer can create reasonable doubt that the keys, credentials, or assets in a digital wallet were secure, it becomes very difficult to hold the relevant parties accountable since all of them have plausible deniability that they took the harmful action.
+1. **Does the wallet digitally sign credentials, messages and transactions?** Only by applying a digital signature to each action taken by the relevant parties can that action be tied directly to the use of a particular digital wallet in a particular interaction.
+1. **Does the wallet produce a secure audit log of user and counterparty interactions and transactions?** As described in the Audit category (above), only by keeping a history of all the digitally signed transactions will the wallet holder be able to produce evidence of the alleged harmful actions.
+1. **Does the wallet provide alerts for unsafe interactions?** In addition to compiling evidence, a Safe Wallet can also implement “accountability by design” by designing the wallet software to alert either: a) the user, b) a governing body (such as a consumer protection agency), or c) both if the wallet detects anomalous behavior or a clear policy violation. This “thousand eyes” approach can be a highly effective deterrent for many bad behaviors and dark patterns online. 
+1. **Does the wallet provide AI-assisted monitoring for unsafe interactions?** Alert monitoring can be further enhanced by personal AI functionality provided it is privacy-respecting and operates exclusively on the wallet holder’s behalf.
+1. **Does the wallet have integrated technical support for a [reputation system](https://en.wikipedia.org/wiki/Reputation_system)?** This is the necessary technical enablement for user-generated reputation (see #7 below).
+
+#### Checklist for Governance Accountability Mechanisms
+
+While technical mechanisms can produce evidence or notification of harmful actions, ultimate accountability resides in the ability to take enforcement action when necessary. This can be supported by any combination of the following governance mechanisms.
+
+1. **Is the wallet certified, and if so, under what certification programs, for what assurance levels, with what trust marks?** Many governance frameworks will specify certification requirements for digital wallets as well as for issuers and verifiers of specific digital credentials.
+1. **Is the wallet conformant with relevant governmental regulations?** Many types of digital harms are already covered by existing laws and regulations, including commercial codes, consumer protection laws, and data protection and privacy regulations.
+1. **Is the wallet conformant with relevant governance frameworks (aka trust frameworks)?** Digital wallets, agents, and credentials can be issued, held, and verified under the policies of a [governance framework](https://docs.google.com/document/d/1fZByfuSOwszDRkE7ARQLeElSYmVznoOyJK4sxRvJpyM/edit#heading=h.2x05z0r097mn) published by the relevant [governing body](https://docs.google.com/document/d/1fZByfuSOwszDRkE7ARQLeElSYmVznoOyJK4sxRvJpyM/edit#heading=h.1wptecwzvuvz). Specifications, tools and models for digital governance frameworks are published by the [Trust Over IP (ToIP) Foundation](https://trustoverip.org/); best practices for digital trust frameworks are published by the [Open Identity Exchange](https://openidentityexchange.org/).
+1. **Is the wallet audited for continued conformance? On what frequency?** Most certification programs will require either periodic or on-demand audits of the wallet hardware and/or software, as well as audits of issuers and/or verifiers.
+1. **Does the wallet support a dispute resolution mechanism?** While legal enforcement is a court of last resort, many governance frameworks may specify more progressive, efficient, and less expensive [dispute resolution](https://en.wikipedia.org/wiki/Dispute_resolution) mechanisms.
+1. **Is the use of the wallet covered by one or more liability frameworks?** Another important accountability topic addressed by governance frameworks is liability, i.e., how damages are assessed, allocated, and paid when a party is found to be in violation of a governance framework. Note: because of their ability to automate verifiable transactions, digital wallets may also enable their holders to engage in a unique new form of automated [class action](https://en.wikipedia.org/wiki/Class_action). Holders that have suffered a specific harm could give consent via their digital wallets to: a) join the class action lawsuit, and b) automatically send the necessary evidence to the class action litigator. This could be a particularly powerful deterrent to bad actors.
+1. **Does the wallet support a [reputation system](https://en.wikipedia.org/wiki/Reputation_system)? Does that reputation system cover the safety features of the wallet itself?** Reputation systems are user-generated accountability mechanisms that do not require trusted third parties (other than to design, implement, and prevent gaming of the reputation system).
+
+
 ## Best Practices
 This section will define the best practices for the each of the above categories.
 
