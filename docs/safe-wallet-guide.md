@@ -28,6 +28,84 @@ Topics to include:
 - Backup and recovery process security
 - Key handling & management & custody
 
+According to the European Union(1) a digital wallet _will provide a secure and convenient way for European citizens and business to  __**share identity data **__ needed for accessing digital services such as checking in at the airport, renting a car, opening a bank account, or when logging in to their accounts on large online platforms._
+
+(1)[https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox](https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox)
+
+At its most basic, a digital wallet is a holder-controlled digital container sitting between Issuers of Verifiable Credentials and a Relying Party that authorizes access to services. It is a critical confluence point and must be able to establish, maintain and attest to the trusted processes which are required for a trustworthy Digital Wallet. DIACC's Digital Wallet Component Conformance Criteria (2) states: "The integrity of a Trusted Process is paramount because many Participants may rely on the output of the process, often across jurisdictional, organizational, and sectoral boundaries."
+
+(2) [PCTF Digital Wallet Confoce Profile Candidate for Final Recommendation V1.0 (diacc.ca)](https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf)
+
+To support the trusted processes, a wallet must support fundamental functions such as:
+
+1. Wallet Selection
+2. Key Management
+3. Credential Signature / Format
+4. Credential Management
+5. Presentation Protocols
+6. Mechanisms to convey Consent
+
+Wallets also play a pivotal role in foundational identity outcomes such as privacy and architectures must be underpinned by strong security controls, and attestations to the context, method and strength of those controls. Security specifications for wallets should ensure performance in a manner tailored for identity-based applications and be specific to the level of assurance required by both the Issuer and Verifier.
+
+![](./images/security.png)
+
+#### Functional elements for security consideration
+
+Security Considerations for wallets to support fundamental functions while mitigating risks for growing attack surfaces and vectors on consumer devices must be factored into the design of the wallet architecture. In a decentralized model, where multiple parties are part of the identity flow maintaining security control across domains and devices is necessary to achieve, and attest to the necessary levels of assurance that are foundational to the establishment of trust, assurance of privacy and the efficacy necessary to create a positive and adoptable wallet-holder experience. DIACC's Digital Wallet Component Includes a comprehensive detailing the Type of Risk, Threat Category, Impact and proposed Mitigation.
+
+Ref(3): [PCTF Digital Wallet Conformance Profile Candidate for Final Recommendation V1.0 (diacc.ca)](https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf)
+
+Expanding on the foundational work DIACC has done, this document provides examples of three functional security elements, with standards references where applicable:
+
+#### Key Management
+
+| **FUNCTION(s)** | **OUTCOME** | **STANDARDS REFERENCE (example)** |
+| --- | --- | --- |
+| Key Storage: Trusted Execution Environment(s) | 1. Hardware backed Trusted Execution Environment (e.g. TEE, TPM, (e)SE) | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2023 |
+|   | 2. Software backed Trusted Execution Environment | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2023 |
+| Key Management: | The set of functions required to be present in every wallet | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2023 |
+| Key | A sequence of symbols that controls the operation of a cryptographic transformation (EMV) | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2024 |
+| Key Expiry | The date after which a signature made with a particular key is no longer valid | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2025 |
+| Key Introduction | The process of generating, distributing and beginning the us of a key pair | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2026 |
+| Key Life Cycle | All phases of key management from generation, through revocation, destruction and archiving | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2027 |
+| Key Replacement | The simultaneous revocation of a key and introduction of a key to replace the revoked one | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2028 |
+| Key Revocation | The key management process of withdrawing a key from service and dealing with the legacy of its use. Key revocation can be as scheduled or accelerated. | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2029 |
+| Key Revocation Date | The date after which no legitimate cards still in use should contain certificates signed by this key, and therefore the date after which this key can be deleted from terminals. For a planned revocation the Key Revocation Date is the same as the key expiry date. | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2030 |
+| Key Withdrawal | The process of removing a key from service as part of its revocation. | ISO/IEC 7816 / EMV BOOK E Security & Key Management v1.0 June 2031 |
+
+#### Wallet Application - Container
+
+| **FUNCTION(s)** | **OUTCOME** | **STANDARDRS REFERENCE (example)** |
+| --- | --- | --- |
+| Mechanisms for Device Attestation: device hardware identifier proofs | 1. Device legitimization | EMV/SBMP |
+| Software Protection: white box crypto, device binding, root detection, anti-instrumentation, tamper-detection, anti-emulation, obfuscation, | 1. Prevent data from compromise while captured, processed & stored on the mobile device | EMV/SBMP |
+| Secure Data Exchange (NFC, Bluetooth, Cellular, Wi-Fi, Infrared): - Modify wireless vendor default encryption keys, passwords and SNMP community strings & transmission encryption | 1. Data protection and/or Interception prevention during exchange between wallet & external devices & verified relationships. | EMV/SBMP |
+| Protect removable media (SIM card, SD card) | 1. SIM , SD attack prevention |   |
+| Drive Biometric readers (camera (face, iris) touch (fingerprint), voice, hand geometry,…… | 1. Disabled 'master prints' |   |
+| Hardware attestation | 1. Proof of mobile device hardware identifiers, such as serial number or IEMI |   |
+| Relationship Identity Establishment | Process to uniquely identify & establish a relationship between the wallet and an external party for each program/service: can be both internal (ie an app) or external |   |
+| Relationship Type(s), Verification & Validation | Process(es) to uniquely validate & verify each external party that will interact with the wallet |   |
+| Relationship Resolution & Maintenance | Change control and maintenance process(es) for identified external parties |   |
+
+#### Threat Minimum Compensation
+
+| **ATTACK VECTOR** | **STANDARDS REFERENCE (Example)** |
+| --- | --- |
+| 1. Bypass of mobile payment platform security controls | EMV |
+| 2. Reverse Engineering of Wallet source code | EMV |
+| 3. Modification of Wallet source code | EMV |
+| 4. Interface exploitation between Wallet product components | EMV |
+| 5. Extraction of assets run time | EMV |
+| 6. Static analysis: Disassembly, recompilation, de-obfuscation | EMV |
+| 7. Code modification - bypass security mechanisms, inject malicious code | EMV |
+| 8. Dynamic analysis: exploitation of debugging fetuses, unprotected lifecycle phases, hooking | EMV |
+| 9. Perturbation attacks | EMV |
+| 10. Differential fault analysis (single or multiple faults) | EMV |
+| 11. Side channel analysis | EMV |
+| 12. RNG attacks | EMV |
+| 13. Software attacks: ie protocol, man-in-the-middle, replay, downgrade attacks, unknown key share / impersonation, certificate misuse | EMV |
+| 14. Logical attacks: ie application, segregation, IPC exploitation, fuzzing | EMV |
+
 ### Wallet locking and unlocking mechanisms
 
 ### Holder binding
