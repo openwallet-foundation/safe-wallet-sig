@@ -1,5 +1,13 @@
 # Safe Wallet Guide
 
+> [!WARNING]  
+> **Please do not edit this document in GitHub**!
+> 
+> The Safe Wallet Guide has been transitioned to a [Google Doc](https://docs.google.com/document/d/1jrxQ2ASDeSt3ZQqmRG4i1gGj5bLPIuNE/edit?usp=drive_link&ouid=111902059063316257481&rtpof=true&sd=true) and will be ready for general review and updates by **08-DEC**
+> If you want to contribute, please use the online version of the document:
+> * [Safe Wallet Guide in Google Docs](https://docs.google.com/document/d/1jrxQ2ASDeSt3ZQqmRG4i1gGj5bLPIuNE/edit?usp=drive_link&ouid=111902059063316257481&rtpof=true&sd=true)  
+  
+
 Digital wallets promise to revolutionise the digital interactions of businesses, governments, and people.
 
 Unless they are implemented carefully, they can open new "back-doors" for undesirable surveillance, profiling, and activity correlation of users. This is especially the case when previously closed and tightly controlled usage moves into much wider and larger scale open ecosystems, where control over every possible use case cannot be exerted by a single body. Such larger open ecosystems include national and international scale wallet ecosystems that are rapidly developing right now that take advantage of recent developments in digital credentials and SSI.
