@@ -16,7 +16,6 @@ jobs:
           args: >-  # allows you to break string into multiple lines
             -f gfm
             -t pdf
-            --pdf-engine=pdflatex
             --output=wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
           

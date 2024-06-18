@@ -1597,9 +1597,8 @@ combination of the following governance mechanisms.
 
 - [ ] The wallet has integrated support for a reputation system.
 
-  -----------------------------------------------------------------------
+-----------------------------------------------------------------------
 
-## Endnotes
 
 [^1]: Decoupling is not a digital wallet specific vulnerability but the
     authors felt it imperative to call it out in context of digital
