@@ -1,5 +1,4 @@
 name: Docs to PDF
-
 # This workflow is triggered on published releases
 on:
   release:
