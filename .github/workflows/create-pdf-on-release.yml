@@ -17,10 +17,10 @@ jobs:
             -f gfm
             -t pdf
             --pdf-engine=pdflatex
-            --output=pdfs/wallet-safety-guide-and-checklist.pdf
+            --output=wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
           
       - uses: softprops/action-gh-release@v2
         with:
-          files: pdfs/wallet-safety-guide-and-checklist.pdf
+          files: wallet-safety-guide-and-checklist.pdf
 
