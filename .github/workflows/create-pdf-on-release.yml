@@ -1,20 +1,24 @@
 name: Docs to PDF
-# This workflow is triggered on pushes to the repository.
+# This workflow is triggered on published releases
 on:
   release:
     types: [published]
 
 jobs:
-  converttopdf:
-    name: Build PDF
-    runs-on: ubuntu-latest
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - uses: actions/checkout@v4
+
+      # Convert GitHub markdown (gfm) to PDF
+      - uses: docker://pandoc/latex:2.9
         with:
-          input_dir: docs
-          output_dir: pdfs
-          build_html: false
+          args: >-  # allows you to break string into multiple lines
+            -f gfm
+            -t pdf
+            --output=pdfs/wallet-safety-guide-and-checklist.pdf
+            docs/wallet-safety-guide-and-checklist.md
+          
       - uses: actions/upload-artifact@v3
         with:
           name: docs
