@@ -20,9 +20,7 @@ jobs:
             --output=pdfs/wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
           
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
+      - uses: softprops/action-gh-release@v2
         with:
           files: pdfs/wallet-safety-guide-and-checklist.pdf
 
