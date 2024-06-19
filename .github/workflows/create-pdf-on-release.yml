@@ -10,12 +10,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Convert GitHub markdown to PDF
+      # Create lua file
+      - name: Create linebreaks.lua
+        run: |
+          cat <<EOF > linebreaks.lua
+          --- Transform a raw HTML element which contains only a `<br>`
+          -- into a format-indepentent line break.
+          function RawInline (el)
+            if el.format:match '^html' and el.text:match '%<br ?/?%>' then
+              return pandoc.LineBreak()
+            end
+          end
+          EOF
+      # Convert GitHub markdown to PDF with 1 inch margins
       - uses: docker://pandoc/latex:3.2.0
         with:
-          args: >-  # allows you to break string into multiple lines
+          args: >-
             -f markdown_github
             -t pdf
+            -V geometry:margin=1in
+            -L linebreaks.lua
             --output=wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
           
