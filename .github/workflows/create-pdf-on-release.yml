@@ -10,11 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Convert GitHub markdown (gfm) to PDF
+      # Convert GitHub markdown to PDF
       - uses: docker://pandoc/latex:3.2.0
         with:
           args: >-  # allows you to break string into multiple lines
-            -f gfm
+            -f markdown_github
             -t pdf
             --output=wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
