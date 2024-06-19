@@ -9,10 +9,10 @@ v1.0<br/>
 | ------ | -------------- | -------------------------- | --------------------- |
 | v1.0   | 18th June 2024 | Finalised.                 | Andy Tobin            |
 | v0.961 | 28th May 2024  | Update checklist for Accountability section <br/> Updated footnotes <br/>   Updated text in first sections| Drummond Reed <br/> Andy Tobin <br/> Daniel Bachenheimer |
-| v0.96  | 7th May 2024   | Updated audience, scope, based on feedback and  <br/> test run exercises by Consult Hyperion, Innopay <br/> and Canadian participants | Juliana Cafik <br/> Andy Tobin <br/> Tim Bloomfield </br> Dan Bachenheimer |
-| v0.951 | 26th Mar 2024 | Added EU Digital identity Wallet example to the Holder </br> Binding section | Dan Bachenheimer |
+| v0.96  | 7th May 2024   | Updated audience, scope, based on feedback and  <br/> test run exercises by Consult Hyperion, Innopay <br/> and Canadian participants | Juliana Cafik <br/> Andy Tobin <br/> Tim Bloomfield <br/> Dan Bachenheimer |
+| v0.951 | 26th Mar 2024 | Added EU Digital identity Wallet example to the Holder <br/> Binding section | Dan Bachenheimer |
 | v0.95 | 25th Mar 2024 | Updates following further reviews. | Andy Tobin <br/> Juliana Cafik <br/> Jorge Flores <br/> Keith Kowal |
-| v0.91 | 25th Feb 2024 | Incorporated external feedback from Jamie Smith++. <br/> Multiple refinements annd clarity edits. | Dan Bachenheimer <br/> Juliana Cafik <br/> Jamie Smith ++ <br/> Andy Tobin |
+| v0.91 | 25th Feb 2024 | Incorporated external feedback from Jamie Smith++. <br/> Multiple refinements and clarity edits. | Dan Bachenheimer <br/> Juliana Cafik <br/> Jamie Smith ++ <br/> Andy Tobin |
 | v0.9 | 15th Feb 2024 | Incorporating feedback from OWF Government Advisory Council <br/> and external reviewers | Andy Tobin <br/> Sankarshan Mukhopadhyay |
 | v0.8 | 6th Feb 2024 | Updates to Wallet/Device Lock/Unlock <br/> Updates to Security <br/> Updates to Accountability | Tim Bloomfield <br/> Juliana Cafik <br/> Drummond Reed       |
 | v0.7 | 30th Jan 2024 | Updates to Holder Binding and Certification sections to change <br/> questions into requirements. | Andy Tobin |
