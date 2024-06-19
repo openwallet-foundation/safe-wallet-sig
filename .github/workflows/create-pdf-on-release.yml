@@ -22,6 +22,21 @@ jobs:
             end
           end
           EOF
+
+      # Create header.tex file
+      - name: Create header.tex
+        run: |
+          cat <<EOF > header.tex
+          \usepackage{fancyhdr}
+          \pagestyle{fancy}
+          \renewcommand{\headrulewidth}{0pt}
+          \renewcommand{\footrulewidth}{0.5pt}
+          \fancyhead[R,C,L]{}
+          \fancyfoot[R]{\thepage}
+          \fancyfoot[C]{}
+          \fancyfoot[L]{Copyright (c) OpenWallet Foundation 2024- \\ License:CC-BY-4.0}
+          EOF
+
       # Convert GitHub markdown to PDF with 1 inch margins
       - uses: docker://pandoc/latex:3.2.0
         with:
@@ -30,6 +45,7 @@ jobs:
             -t pdf
             -V geometry:margin=1in
             -L linebreaks.lua
+            -H header.tex
             --output=wallet-safety-guide-and-checklist.pdf
             docs/wallet-safety-guide-and-checklist.md
           
