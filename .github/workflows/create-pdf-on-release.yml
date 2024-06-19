@@ -34,7 +34,7 @@ jobs:
           \fancyhead[R,C,L]{}
           \fancyfoot[R]{\thepage}
           \fancyfoot[C]{}
-          \fancyfoot[L]{Copyright (c) OpenWallet Foundation 2024- \\ License:CC-BY-4.0}
+          \fancyfoot[L]{Copyright (c) OpenWallet Foundation 2024- \\\\ License:CC-BY-4.0}
           EOF
 
       # Convert GitHub markdown to PDF with 1 inch margins
