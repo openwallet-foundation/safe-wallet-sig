@@ -255,8 +255,7 @@ boundaries". DIACC's Digital Wallet Conformance Profile2 also includes a compreh
 detailing the Type of Risk, Threat Category, Impact and Proposed Mitigation, which is a good example of
 how to assess digital wallet conformance to these critical design elements.
 
-[Expanding on the foundational work that DIACC has done](https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-
-Recommendation-V1.0.pdf), this document describes Trusted Processes and
+[Expanding on the foundational work that DIACC has done](https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf), this document describes Trusted Processes and
 Security Design Controls and Considerations that may be necessary to provide safety for wallet holders as
 well as meet the required levels of assurance for regulatory compliance, issuers, verifiers and relying
 parties as well as ultimately providing the building blocks for establishing an awareness of state via
