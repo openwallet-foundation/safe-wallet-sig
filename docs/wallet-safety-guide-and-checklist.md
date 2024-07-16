@@ -28,39 +28,11 @@ License: CC-BY-4.0
 
 ##  Contents
 
-- [Introduction](#introduction)
-- [Audience](#audience)
-- [Scope](#scope)
-- [Privacy](#privacy)
-    - [Tracking](#tracking)
-    - [Correlation](#correlation)
-    - [Observation](#observation)
-    - [Privacy Checklist](#privacy-checklist)
-- [Security](#security)
-    - [Trusted Processes](#trusted-processes)
-    - [Security Design Controls and Considerations](#security-design-controls-and-considerations)
-    - [Security Checklist](#security-checklist)
-- [Wallet Locking and Unlocking Mechanisms](#wallet-locking-and-unlocking-mechanisms)
-    - [Locking and Unlocking Checklist](#locking-and-unlocking-checklist)
-- [Holder Binding](#holder-binding)
-    - [Additional information regarding biometrics in holder binding](#additional-information-regarding-biometrics-in-holder-binding)
-    - [Holder Binding Checklist](#holder-binding-checklist)
-- [Regulatory Compliance](#regulatory-compliance)
-    - [Regulatory Compliance Checklist](#regulatory-compliance-checklist)
-- [Certification](#certification)
-    - [Certification Checklist](#certification-checklist)
-- [User Interface / User Experience](#user-interface--user-experience)
-    - [UI/UX Rules](#uiux-rules)
-    - [Resources and References](#resources-and-references)
-    - [User Interface Checklist](#user-interface-checklist)
-- [Counterparties](#counterparties)
-    - [Counterparties Checklist](#counterparties-checklist)
-- [Audit ](#audit)
-    - [Audit Checklist](#audit-checklist)
-- [Accountability](#accountability)
-    - [Checklist for Technical Accountability Mechanisms](#checklist-for-technical-accountability-mechanisms)
-    - [Checklist for Governance Accountability Mechanisms](#checklist-for-governance-accountability-mechanisms)
-    - [Accountability Checklist](#accountability-checklist)
+- [Executive Summary](#executive-summary) 
+- [Pillar 1: Privacy](#pillar-1-privacy)
+- [Pillar 2: Security](#pillar-2-security)
+- [Pillar 3: Supporting Functions](#pillar-3-supporting-functions)
+- [Pillar 4: Governance](#pillar-4-governance)
 
 ## Executive Summary
 
@@ -836,7 +808,14 @@ Digital Wallets, the prerequisites for accountability can be bifurcated into:
     - b. Governance strategies, which necessitate human intervention in adherence to established laws,
 regulations, policies, rules, or even through reputation systems
 
+--- 
+Copyright (c) 2024 OpenWallet Foundation.
+This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
+These materials are made available under and are subject to the Creative Commons Attribution 4.0 International license (http://creativecommons.org/licenses/by/4.0/legalcode).
 
+THESE MATERIALS ARE PROVIDED “AS IS.” The OpenWallet Foundation ("OWF") and its members and contributors (each of OWF, its members and contributors, a "OWF Party") expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user. 
+
+IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THESE MATERIALS, ANY DELIVERABLE OR THE OWF GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 [^1]: Decoupling is not a digital wallet specific vulnerability but the
