@@ -1,7 +1,7 @@
 # Wallet Safety Guide and Checklist
 OpenWallet Foundation Safe Wallet Special Interest Group (OWF-SW-SIG)<br/>
 v1.1<br/>
-16th July 2024<br/>
+16th July 2024
 
 --- 
 Copyright (c) 2024 OpenWallet Foundation.
@@ -17,11 +17,11 @@ IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR 
 
 | Version | Date | Changes | Authors |
 | ------ | -------------- | -------------------------- | --------------------- |
-| v1.1     | 16th July 2024 | Add front-matter; reformat for Markdown | Sean Bohan<br/>Tracy Kuhrt |
-| v1.0.2   | 10th July 2024 | Final editorial pass, add comments from Safe Wallet SIG | Juliana Cafik         |
-| v1.0.1   | 27th June 2024 | Full Edit for ‘tone’ consistency, reduce duplications, add additional detail and/or context, to align under 4 Pillars and add Executive Summary     | Juliana Cafik         |
+| v1.1     | 16th July 2024 | Add front-matter; reformat for Markdown | Sean Bohan <br/> Tracy Kuhrt |
+| v1.0.2   | 10th July 2024 | Final editorial pass, add comments from Safe Wallet SIG | Juliana Cafik |
+| v1.0.1   | 27th June 2024 | Full Edit for _tone_ consistency, reduce duplications, add additional detail and/or context, to align under 4 Pillars and add Executive Summary | Juliana Cafik |
 | v1.0     | 18th June 2024 | Finalised.                 | Andy Tobin            |
-| v0.961 | 28th May 2024  | Update checklist for Accountability section <br/> Updated footnotes <br/>   Updated text in first sections| Drummond Reed <br/> Andy Tobin <br/> Daniel Bachenheimer |
+| v0.961 | 28th May 2024  | Update checklist for Accountability section <br/> Updated footnotes <br/> Updated text in first sections | Drummond Reed <br/> Andy Tobin <br/> Daniel Bachenheimer |
 | v0.96  | 7th May 2024   | Updated audience, scope, based on feedback and  <br/> test run exercises by Consult Hyperion, Innopay <br/> and Canadian participants | Juliana Cafik <br/> Andy Tobin <br/> Tim Bloomfield <br/> Dan Bachenheimer |
 | v0.951 | 26th Mar 2024 | Added EU Digital identity Wallet example to the Holder <br/> Binding section | Dan Bachenheimer |
 | v0.95 | 25th Mar 2024 | Updates following further reviews. | Andy Tobin <br/> Juliana Cafik <br/> Jorge Flores <br/> Keith Kowal |
@@ -237,7 +237,7 @@ of, services. It is also a critical confluence point in credential-based interac
 establish, maintain and attest to the trusted processes required for a private, trustworthy, secure, and
 safe digital transaction to safeguard against harm.
 
-[According to the European Union](https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox),
+According to the European Union[^1],
 a compliant EU digital wallet _will provide a secure and convenient way for European citizens and business to **share identity data** needed for accessing digital services such
 as checking in at the airport, renting a car, opening a bank account, or logging in to their accounts on
 large online platforms._
@@ -260,11 +260,11 @@ precautions to secure digital assets and their exchange for wallet holders.
 The Digital Identity and Authentication Council of Canada’s (DIACC's) Digital Wallet Component
 Conformance Criteria states: "The integrity of a Trusted Process is paramount because many Participants
 may rely on the output of the process, often across jurisdictional, organizational, and sectoral
-boundaries". DIACC's Digital Wallet Conformance Profile2 also includes a comprehensive breakout
+boundaries". DIACC's Digital Wallet Conformance Profile[^2] also includes a comprehensive breakout
 detailing the Type of Risk, Threat Category, Impact and Proposed Mitigation, which is a good example of
 how to assess digital wallet conformance to these critical design elements.
 
-[Expanding on the foundational work that DIACC has done](https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf), this document describes Trusted Processes and
+Expanding on the foundational work that DIACC has done, this document describes Trusted Processes and
 Security Design Controls and Considerations that may be necessary to provide safety for wallet holders as
 well as meet the required levels of assurance for regulatory compliance, issuers, verifiers and relying
 parties as well as ultimately providing the building blocks for establishing an awareness of state via
@@ -464,7 +464,8 @@ than secure by design, as each wallet holder’s environment is different. What 
 wallet architecture might not work for another. It is also important to consider that secure by default
 features go through rigorous testing and periods of customer feedback to ensure benefit to the
 largest number of end users possible.
-1. Security Controls: such as NIST 800-53 and PCI DSS are safeguards, or countermeasures, prescribed to
+1. Security Controls: such as [NIST 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
+and [PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) are safeguards, or countermeasures, prescribed to
 meet a set of defined security requirements Controls are designed to address specific needs as
 specified by a set of security requirements and aid in protecting organizational operations and assets,
 the integrity of systems that support the wallet, the storage of sensitive data and authentication data,
@@ -496,8 +497,11 @@ licensing terms
 companies time by fostering greater collaboration between organizations
 1. Software Development Best Practices, Software Assurance Models and Standards: should be
 considered to improve software security postures for the design, development and deployment of
-secure software for digital wallets and include NIST 800-218, OWASP SAMM , PCI Secure Software
-Standard and PCI Secure Software Lifecycle (Secure SLC). Adopting software development best
+secure software for digital wallets and include [NIST 800-218](https://csrc.nist.gov/pubs/sp/800/218/final),
+[OWASP SAMM](https://owaspsamm.org/about/),
+[PCI Secure Software Standard](https://www.pcisecuritystandards.org/standards/secure-software/)
+and [PCI Secure Software Lifecycle (Secure SLC)](https://www.pcisecuritystandards.org/standards/secure-software-lifecycle-secure-slc/).
+Adopting software development best
 practices and assurance models along with standards can offer numerous advantages for digital
 wallets such as:
     1. Quality Assurance: Compliance with best practices and standards ensures the software’s
@@ -525,7 +529,8 @@ stakeholders
 ## Pillar 3: Supporting Functions
 
 Supporting functions for digital wallets are mechanisms specific to a digital wallet that enable, or support, 
-external party processes and the functions, features and capabilities required to support specific usecases, applicable standards requirements, trust frameworks and regulatory requirements.
+external party processes and the functions, features and capabilities required to support specific use-cases, applicable standards requirements, trust frameworks and regulatory requirements.
+
 1. Wallet and Device Locking and Unlocking Mechanisms: A safe digital wallet will provide a secure and
 user-friendly means through which an authorized holder may unlock and lock it to minimize
 fraudulent use. While these lock/unlock mechanisms, typically driven by the wallet provider, are
@@ -565,8 +570,8 @@ these two concepts—locking/unlocking and authentication—are closely intertwi
 digital wallet security and the mechanisms and methods described below may apply to both.
 Authentication refers to the process of verifying the identity of a user before granting access to the
 wallet. This process is crucial for ensuring its security and protecting it from unauthorized access. For
-specific requirements and guidance for authentication we reference NIST SP 800-63-4 B (draft) but
-highlight the following for context:
+specific requirements and guidance for authentication we reference [NIST SP 800-63-4 B (draft)](https://pages.nist.gov/800-63-4/sp800-63b.html)
+but highlight the following for context:
 
     1. The mechanisms and controls to lock and unlock and authenticate to a wallet are defined by
 wallet developers. Wallet authentication mechanisms may vary in level of assurance and
@@ -606,8 +611,8 @@ or sharing these attributes requires a means to bind the wallet and the credenti
 natural person.
 
     In 1995, for example, the International Civil Aviation Organization (ICAO) clearly recognized the
-desirability of pursuing the use of biometrics in travel documents as [the single best way to link the
-document and its rightful “owner.”](https://www.icao.int/security/mrtd/downloads/technical%20reports/icao_mrtd_history_of_interoperability.pdf) In this example, the issuing authority binds the identity
+desirability of pursuing the use of biometrics in travel documents as the single best way to link the
+document and its rightful “owner.”[^3] In this example, the issuing authority binds the identity
 attributes to the authorized holder during the issuance process by including biometric data in the
 cryptographically signed logical data structure. When the holder makes an identity claim, the Relying
 Party (verifier) can determine the authenticity and integrity of the identity attributes and, through
@@ -822,28 +827,8 @@ Digital Wallets, the prerequisites for accountability can be bifurcated into:
 regulations, policies, rules, or even through reputation systems
 
 
+[^1]: <https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox>
 
+[^2]: <https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf>
 
-[^1]: Decoupling is not a digital wallet specific vulnerability but the
-    authors felt it imperative to call it out in context of digital
-    wallet usage
-
-[^2]: [https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox](https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox)
-
-[^3]: <https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf>
-
-[^4]: Note related ongoing work on ISO/IEC 23220-5
-
-[^5]: https://pages.nist.gov/800-63-3/sp800-63b.html
-
-[^6]: <https://diacc.ca/wp-content/uploads/2023/04/PCTF-Digital-Wallet_Conformance-Profile-Final-Recommendation-V1.0.pdf>
-
-[^7]: [https://www.icao.int/security/mrtd/downloads/technical%20reports/icao_mrtd_history_of_interoperability.pdf](https://www.icao.int/security/mrtd/downloads/technical%20reports/icao_mrtd_history_of_interoperability.pdf)
-
-[^8]: <https://www.europarl.europa.eu/doceo/document/TA-9-2024-0117_EN.pdf>
-
-[^9]: <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32015R1502&from=en>
-
-[^10]: <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32015R1502>
-
-[^11]: <https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-63a.pdf>
+[^3]: <https://www.icao.int/security/mrtd/downloads/technical%20reports/icao_mrtd_history_of_interoperability.pdf>
