@@ -1008,10 +1008,10 @@ and may be subject to multiple requirements from both for:
    there should be mechanisms to hold the responsible parties accountable. Like most categories of Safe
    Digital Wallets, the prerequisites for accountability can be bifurcated into:
 
-        1. Technical strategies, which involve the use of hardware, software, and protocols
+    1. Technical strategies, which involve the use of hardware, software, and protocols
 
-        1. Governance strategies, which necessitate human intervention in adherence to established laws,
-           regulations, policies, rules, or even through reputation systems
+    1. Governance strategies, which necessitate human intervention in adherence to established laws,
+       regulations, policies, rules, or even through reputation systems
 
 
 [^1]: <https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox>
