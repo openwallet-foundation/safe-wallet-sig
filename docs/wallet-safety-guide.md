@@ -1,4 +1,4 @@
-# Wallet Safety Guide and Checklist
+# Wallet Safety Guide
 OpenWallet Foundation Safe Wallet Special Interest Group (OWF-SW-SIG)<br/>
 v1.1<br/>
 16th July 2024<br/>

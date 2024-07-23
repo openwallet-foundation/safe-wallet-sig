@@ -46,10 +46,10 @@ jobs:
             -V geometry:margin=1in
             -L linebreaks.lua
             -H header.tex
-            --output=wallet-safety-guide-and-checklist.pdf
-            docs/wallet-safety-guide-and-checklist.md
+            --output=wallet-safety-guide.pdf
+            docs/wallet-safety-guide.md
           
       - uses: softprops/action-gh-release@v2
         with:
-          files: wallet-safety-guide-and-checklist.pdf
+          files: wallet-safety-guide.pdf
 
