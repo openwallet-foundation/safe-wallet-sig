@@ -68,19 +68,19 @@ Addressing the highlighted concerns, the Open Wallet Foundation (OWF) Safe Walle
 Group (SIG) has compiled the following high-level safety guidelines to aid wallet developers and product
 managers. The document emphasizes four fundamental Pillars for Safe Wallets:
 
-1. Privacy Pillar: Privacy by Design (PbD) is crucial for digital wallets, focusing on protecting user data
+1. **Privacy Pillar**: Privacy by Design (PbD) is crucial for digital wallets, focusing on protecting user data
    from unwanted observation and tracking. The document outlines principles and mechanisms to
    ensure privacy, such as avoiding unique identifiers and decoupling issuers and verifiers
 
-2. Security Pillar: Security by Design and Zero Trust principles are essential for digital wallets. The
+2. **Security Pillar**: Security by Design and Zero Trust principles are essential for digital wallets. The
    document details various security measures, including key management, credential management,
    and secure presentation protocols to prevent unauthorized access and ensure data integrity
 
-3. Supporting Functions: Supporting functions for digital wallets include mechanisms for wallet and
+3. **Supporting Functions**: Supporting functions for digital wallets include mechanisms for wallet and
    device locking/unlocking, user interface/user experience considerations, and holder binding. The
    document emphasizes the importance of these functions for ensuring security and usability
 
-4. Governance Pillar: Governance involves regulatory compliance, certification, counterparty
+4. **Governance Pillar**: Governance involves regulatory compliance, certification, counterparty
    verification, and audit requirements. The document discusses the need for digital wallets to adhere to
    legal standards and provide mechanisms for accountability and transparency
 
@@ -156,19 +156,19 @@ operation of digital wallets. Elements for consideration include:
    and enhancing user autonomy and trust. The importance of separating the roles of issuers and
    verifiers in the context of digital wallets is multi-fold:
 
-    1. Reduced Data Exposure: If issuers and verifiers are distinct, the personal data revealed during
+    1. **Reduced Data Exposure**: If issuers and verifiers are distinct, the personal data revealed during
        transactions can be kept to a minimum. The party verifying the credential doesn’t need to know
        its issuer, and vice versa
 
-    1. Avoiding Correlation: Keeping issuers and verifiers separate helps avoid the correlation of
+    1. **Avoiding Correlation**: Keeping issuers and verifiers separate helps avoid the correlation of
        transactions. If a single entity were to issue and verify a credential, it could potentially track its
        usage, compromising the user’s privacy
 
-    1. Increased User Autonomy: Users have more control over their data when issuers and verifiers are
+    1. **Increased User Autonomy**: Users have more control over their data when issuers and verifiers are
        not the same. They can choose to share their credentials without the issuers knowing where and
        when those credentials are being used
 
-    1. Trust Building: Trust among users is fostered when issuers and verifiers are decoupled, as users
+    1. **Trust Building**: Trust among users is fostered when issuers and verifiers are decoupled, as users
        can be confident that no single entity has access to all their transaction data. This can lead to a
        broader acceptance of digital wallets
 
@@ -239,22 +239,22 @@ ecosystems and should:
    protect user data, prevent unwanted tracking, and enhance user control and trust and is critical to
    privacy for several reasons:
 
-    1. User Control: Consent management gives users control over their own data. Users decide what
+    1. **User Control**: Consent management gives users control over their own data. Users decide what
        information they want to share, with whom, and for what purpose. This empowers users and
        respects their privacy
 
-    1. Minimizing Data Exposure: With consent management, users can choose to share only the
+    1. **Minimizing Data Exposure**: With consent management, users can choose to share only the
        necessary information, minimizing the exposure of their personal data. This is particularly
        important in the context of digital wallets where sensitive information is involved.
 
-    1. Trust and Transparency: Consent management promotes trust as users know their data is being
+    1. **Trust and Transparency**: Consent management promotes trust as users know their data is being
        used responsibly. It also ensures transparency as users are aware of how their data is being used
 
-    1. Regulatory Compliance: Many regions have data protection regulations that require user consent
+    1. **Regulatory Compliance**: Many regions have data protection regulations that require user consent
        before personal data can be processed. Consent management helps digital wallets comply with
        these regulations, avoiding legal issues and potential fines
 
-    1. Preventing Misuse of Data: By giving users the ability to manage consent, it reduces the risk of
+    1. **Preventing Misuse of Data**: By giving users the ability to manage consent, it reduces the risk of
        data misuse. Holders can withdraw consent if they believe their data is not being used
        appropriately
 
@@ -262,7 +262,7 @@ ecosystems and should:
        add data or read data from their wallet. This is a major privacy consideration and ensures the
        user is in control of their data.
 
-    1. Record of Notice and Consent: Holders must be able to track the Notices provided and consents
+    1. **Record of Notice and Consent**: Holders must be able to track the Notices provided and consents
        given and should be able to withdraw that consent at any time
 
     1. Enable Wallet privacy preserving supporting functions: The act of providing consent by the holder
@@ -311,7 +311,7 @@ attestation that can be relied upon.
 
 ### Trusted Processes
 
-1. Wallet Selection: Wallet selection refers to the process of the holder or device operating system
+1. **Wallet Selection**: Wallet selection refers to the process of the holder or device operating system
    choosing a digital wallet for a specific purpose while ensuring optimal security and safety. In a
    situation where multiple wallets are available, a wallet selector is an additional step in the wallet user
    flow when sending or receiving transactions, to prompt a provider to choose the specific digital wallet
@@ -323,7 +323,7 @@ attestation that can be relied upon.
 
     1. Malware:
 
-        1. Regular Software Updates: Continually update wallet software, operating systems,
+        1. **Regular Software Updates**: Continually update wallet software, operating systems,
            internet browsers, phone firmware, and antivirus software to fix known vulnerabilities as
            they are discovered
 
@@ -339,7 +339,7 @@ attestation that can be relied upon.
     1. Social Engineering prevention involves a combination of technical measures, policy enforcement
        and wallet holder education. Strategies for mitigation include:
 
-        1. User Education: Users should be educated about the common tactics used in social
+        1. **User Education**: Users should be educated about the common tactics used in social
            engineering attacks and how to identify potential scams
 
         1. Phishing resistant authentication
@@ -367,76 +367,76 @@ attestation that can be relied upon.
 
             1. Replay Attacks: Capturing and reusing information
 
-1. Key Management and Generation: the security of a cryptographic system heavily relies on the secure
+1. **Key Management and Generation**: the security of a cryptographic system heavily relies on the secure
    generation, storage, and management of its keys and is an essential function involving the handling
    and safeguarding of cryptographic keys to ensure the security and integrity of the holder's digital
    assets and it is essential that the design be reviewed by multiple cryptographers. Primary security
    considerations and controls for key management and key generation are a vital part of a wallet’s
    cryptographic systems and require considerable care to ensure security such as:
 
-    1. Random Number Generator Quality: It is important to use a high-quality random number
+    1. **Random Number Generator Quality**: It is important to use a high-quality random number
        generator for key generation. This helps to avoid predictability and strengthens the security of
        the cryptographic system
 
-    1. Encryption Algorithms and Key Size Selection: The choice of encryption algorithms and key size
+    1. **Encryption Algorithms and Key Size Selection**: The choice of encryption algorithms and key size
        should be based on the security requirements of the application and the most secure
        combination should be selected
 
-    1. Safe Key Storage: Keys should be stored securely using hardware security modules, smart cards,
+    1. **Safe Key Storage**: Keys should be stored securely using hardware security modules, smart cards,
        and/or trusted platform modules. This secure storage helps to prevent unauthorized access to
        the keys
 
-    1. Key Rotation and Decommissioning: Keys should be renewed periodically, and old keys should be
+    1. **Key Rotation and Decommissioning**: Keys should be renewed periodically, and old keys should be
        decommissioned. Regular renewal of keys reduces the risk of key compromise over time
 
-    1. Preventing Key Compromise: The secure management of cryptographic keys is of utmost
+    1. **Preventing Key Compromise**: The secure management of cryptographic keys is of utmost
        importance, as the security and reliability of cryptographic processes depend on the strength of
        the keys, the effectiveness of the protocols associated with the keys, and the protection given to
        the keys
 
-    1. Adherence to Standards: Established standards and recommendations for key management
+    1. **Adherence to Standards**: Established standards and recommendations for key management
        should be followed, such as those provided by recognized standards organizations or as
        mandated by regulations or necessary to meet risk management requirements
 
-    1. Backup and Recovery: A robust key recovery system, or process, is critical to ensure users can
+    1. **Backup and Recovery**: A robust key recovery system, or process, is critical to ensure users can
        regain access to their wallet(s)if the private keys are lost or compromised
 
-    1. Usage: Keys should be protected while in use, and at rest, in a secure manner and within a secure
+    1. **Usage**: Keys should be protected while in use, and at rest, in a secure manner and within a secure
        environment
 
-    1. Key Revocation: Processes for revoking and replacing compromised keys
+    1. **Key Revocation**: Processes for revoking and replacing compromised keys
 
-    1. Audit: Processes for logging, detecting and providing notice of security risks to keys
+    1. **Audit**: Processes for logging, detecting and providing notice of security risks to keys
 
     1. Private Key Management to prevent exposure during the rendering of transaction processes
 
-1. Credential Signature / Format: A credential signature in the context of a digital wallet is a digital proof
+1. **Credential Signature / Format**: A credential signature in the context of a digital wallet is a digital proof
    that verifies the authenticity of the credential. For a secure credential signature, it is important for
    the wallet to support:
 
-    1. Credential Signature Verification: mechanisms to verify the authenticity of the credential
+    1. **Credential Signature Verification**: mechanisms to verify the authenticity of the credential
        signatures to ensure they have not been tampered with and are issued by a legitimate trusted
        authority
 
-    1. Secure Storage of Credentials: Secure storage to prevent unauthorized access and tampering
+    1. **Secure Storage of Credentials**: Secure storage to prevent unauthorized access and tampering
        with verified signatures
 
-    1. Privacy Preservation: Mechanisms to support the verification of credentials without revealing
+    1. **Privacy Preservation**: Mechanisms to support the verification of credentials without revealing
        unnecessary personal information, such as selective disclosure and zero-knowledge proofs
 
-1. Credential Management: Credential management in the context of a digital wallet refers to the
+1. **Credential Management**: Credential management in the context of a digital wallet refers to the
    process of handling and safeguarding digital credentials to ensure their integrity. Security
    considerations are:
 
-    1. Storage: Credentials must be stored securely to prevent unauthorized access.
+    1. **Storage**: Credentials must be stored securely to prevent unauthorized access.
 
-    1. Backup and Recovery: A robust recovery system, or process, to ensure holders are able to regain
+    1. **Backup and Recovery**: A robust recovery system, or process, to ensure holders are able to regain
        access to their wallet(s)
 
-    1. Usage: Digital wallet architecture must support credential use in a secure manner and within a
+    1. **Usage**: Digital wallet architecture must support credential use in a secure manner and within a
        secure environment
 
-    1. Revocation: The process of revoking and replacing compromised credentials is a crucial aspect of
+    1. **Revocation**: The process of revoking and replacing compromised credentials is a crucial aspect of
        maintaining the integrity and security of the wallet and the credentials it holds. Processes will
        vary by issuer, wallet, and framework and will need to ensure:
 
@@ -446,14 +446,14 @@ attestation that can be relied upon.
 
         1. Prevent holder traceability
 
-    1. Audit: Auditing processes are crucial for maintaining the security of a digital wallet. They involve
+    1. **Audit**: Auditing processes are crucial for maintaining the security of a digital wallet. They involve
        logging and detecting potential security risks to the credentials stored in the wallet. These
        processes aim to safeguard the integrity, privacy, and availability of the wallet, its trusted
        processes, supporting functions, and credentials. Regular audits can help identify vulnerabilities
        or breaches and take appropriate action to mitigate risks. It is an essential part of maintaining a
        secure digital wallet environment
 
-1. Presentation Protocols: Presentation protocols in the context of a digital wallet refer to the
+1. **Presentation Protocols**: Presentation protocols in the context of a digital wallet refer to the
    standardized methods for presenting, sharing and verifying digital credentials. The protocols ensure
    interoperability and secure communication between different entities in the digital ecosystem,
    include standards-based credential presentation and verification and are crucial to the security and
@@ -476,7 +476,7 @@ attestation that can be relied upon.
     1. Audit processes for logging and detecting security risks, such as malware, phishing attacks, man-
        in-the-middle attacks, etc., that may impact credential presentation.
 
-1. Mechanisms to convey consent: User Consent is a critical aspect of privacy and security in digital
+1. **Mechanisms to convey consent**: User Consent is a critical aspect of privacy and security in digital
    wallets. It provides credential holders with control over wallet interactions and the sharing of specific
    information, such as credentials with a service provider. To support secure holder-consent, the
    following mechanisms should be implemented:
@@ -485,7 +485,7 @@ attestation that can be relied upon.
        holder of both the wallet and the credential
 
     1. Phishing and ‘spoof’ resistant user interface
-
+                                                                                                                
     1. Strong data encryption and storage to secure sensitive data and consent records and prevent
        unauthorized access
 
@@ -504,14 +504,14 @@ wallets, these strategies are essential for advancing collective security. Imple
 by design principles during the design phase of product development can reduce the number of
 vulnerabilities that can be exploited by adversaries:
 
-1. Zero Trust: A security model that operates on the principle of “never trust, always verify.” In the
+1. **Zero Trust**: A security model that operates on the principle of “never trust, always verify.” In the
    context of a digital wallet, this means that every transaction or access request is treated as potentially
    hostile, regardless of whether it originates from inside or outside the network. Zero Trust means the
    security posture for all users and devices defaults to untrusted, then layers of access are added based
    on the identity and context of the user or device, following the principle of least privilege. This makes
    it a highly effective strategy for securing digital wallets and other sensitive digital assets
 
-1. Open Design: A concept that involves the development of products, machines, and systems using
+1. **Open Design**: A concept that involves the development of products, machines, and systems using
    publicly shared design information including Open-Source Software. Specific security considerations
    for Open Design include:
 
@@ -531,43 +531,43 @@ vulnerabilities that can be exploited by adversaries:
     1. Limiting the amount of code and functionality exposed to potential attackers. The less code,
        the fewer vulnerabilities there are likely to be
 
-1. Attack Surface Minimization: A security strategy that aims to reduce the number of potential
+1. **Attack Surface Minimization**: A security strategy that aims to reduce the number of potential
    vulnerabilities in a wallet by limiting the ways in which it can be attacked. This can be achieved by
    reducing the number of entry, end points and APIs and by limiting the functionality and access of the
    wallet to only what is necessary for its intended purpose. By minimizing the attack surface, the wallet
    becomes more difficult to compromise, as there are fewer ways for an attacker to gain access or
    exploit vulnerabilities
 
-1. Defense in depth: A security strategy that employs multiple layers of protection to slow down or
+1. **Defense in depth**: A security strategy that employs multiple layers of protection to slow down or
    prevent an attack from gaining unauthorized access to information. Each layer provides protection so
    that if one layer is breached, a subsequent layer is already in place to prevent further exposure.
 
-1. Least privilege: A security concept that requires each user, system, or process related to the wallet to
+1. **Least privilege**: A security concept that requires each user, system, or process related to the wallet to
    have a minimum level of access necessary to perform its function. This means that users, systems, or
    processes should only have access to the resources and information related to the wallet that they
    need to do their job, and nothing more. This approach helps to reduce the risk of unauthorized access
    or malicious actions, as it limits the potential damage that can be caused if a user, system, or process
    is compromised
 
-1. Need to know: A security concept that states that access to information should be restricted to
+1. **Need to know**: A security concept that states that access to information should be restricted to
    individuals who require that information to perform a specific task or function. This means restricting
    access to the information that is necessary for them to complete a task, and no more. This principle is
    closely related to the principle of least privilege. By following the need-to-know principle, wallet
    developers can reduce the risk of unauthorized access or disclosure of sensitive information
 
-1. Role Based Access Controls (RBAC): A method of regulating access to resources based on the roles of
+1. **Role Based Access Controls (RBAC)**: A method of regulating access to resources based on the roles of
    individual users. In RBAC, permissions are assigned to roles, and users are assigned to roles. This
    allows for access to be restricted based on function, such as wallet Holder, Software Developer,
    Quality Assurance (QA), Project Managers, Security Analysts, and System Administrators, with roles
    being broad for general access or fine-grained to restrict specific capabilities
 
-1. Separation of Duties: A security principle that shifts the burden of security as much as possible away
+1. **Separation of Duties**: A security principle that shifts the burden of security as much as possible away
    from the end-user, or holder in the context of a wallet, to the wallet developer(s). This principle is
    based on the idea that no single individual should have complete control over a critical process or
    system, and that by distributing responsibilities and privileges, the potential for abuse or misuse is
    reduced. Separation of duties is often implemented through role-based access controls (RBAC)
 
-1. Secure by Default: A principle aimed at shifting the burden of security as much as possible away from
+1. **Secure by Default**: A principle aimed at shifting the burden of security as much as possible away from
    the holder back to the wallet developer(s). It is about designing wallets that require minimal
    hardening and are secure when deployed. In the context of digital wallets this is much harder to do
    than secure by design, as each wallet holder’s environment is different. What works well for one
@@ -575,7 +575,7 @@ vulnerabilities that can be exploited by adversaries:
    features go through rigorous testing and periods of customer feedback to ensure benefit to the
    largest number of end users possible.
 
-1. Security Controls: such as [NIST 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
+1. **Security Controls**: such as [NIST 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
    and [PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/) are safeguards, or countermeasures, prescribed to
    meet a set of defined security requirements Controls are designed to address specific needs as
    specified by a set of security requirements and aid in protecting organizational operations and assets,
@@ -585,35 +585,35 @@ vulnerabilities that can be exploited by adversaries:
    management of risk and information system security and are integral to the overall security posture
    of a digital wallet and supporting systems and organizations
 
-1. Software Bill of Materials (SBOM): An SBOM is a key building block in software security and software
+1. **Software Bill of Materials (SBOM)**: An SBOM is a key building block in software security and software
    supply chain risk management. It provides transparency into all constituent parts of the software,
    which is crucial for understanding exactly what has gone into the software that is being distributed
    and used for the wallet. The specifics of what is included in an SBOM can vary depending on the
    software in question and can provide a multitude of security advantages such as:
 
-    1. Handling Vulnerabilities: SBOMs allow organizations to keep track of third-party components
+    1. **Handling Vulnerabilities**: SBOMs allow organizations to keep track of third-party components
        accurately. This enables developers to evaluate associated risks, such as open-source libraries,
        both before and after their incorporation. They can systematically cross-check the inventory
        against databases of known vulnerabilities
 
-    1. Enhanced Visibility and Transparency: SBOMs improve visibility in the software supply chain. They
+    1. **Enhanced Visibility and Transparency**: SBOMs improve visibility in the software supply chain. They
        generate and verify information about code provenance and relationships between components,
        which assists software engineering teams in detecting malicious attacks during development and
        deployment
 
-    1. Incident Response and Forensics: In case of a security incident, an SBOM can assist cybersecurity
+    1. **Incident Response and Forensics**: In case of a security incident, an SBOM can assist cybersecurity
        teams in identifying and addressing vulnerabilities. Organizations with SBOMs have been able to
        reduce response times due to their ability to map applications to vulnerable dependencies
 
-    1. Regulatory Compliance: Many governments and regulatory organizations now require the use of
+    1. **Regulatory Compliance**: Many governments and regulatory organizations now require the use of
        SBOMs as a standard. By understanding the source and licensing of each component, an
        organization can ensure that the use of these components complies with legal requirements and
        licensing terms
 
-    1. Efficiency: The common infrastructure and data exchange format of SBOMs could save
+    1. **Efficiency**: The common infrastructure and data exchange format of SBOMs could save
        companies time by fostering greater collaboration between organizations
 
-1. Software Development Best Practices, Software Assurance Models and Standards: should be
+1. **Software Development Best Practices, Software Assurance Models and Standards**: should be
    considered to improve software security postures for the design, development and deployment of
    secure software for digital wallets and include [NIST 800-218](https://csrc.nist.gov/pubs/sp/800/218/final),
    [OWASP SAMM](https://owaspsamm.org/about/),
@@ -623,34 +623,34 @@ vulnerabilities that can be exploited by adversaries:
    practices and assurance models along with standards can offer numerous advantages for digital
    wallets such as:
 
-    1. Quality Assurance: Compliance with best practices and standards ensures the software’s
+    1. **Quality Assurance**: Compliance with best practices and standards ensures the software’s
        quality, leading to a more reliable and robust digital wallet
 
-    1. Security: Best practices often encompass security measures such as encryption, secure APIs,
+    1. **Security**: Best practices often encompass security measures such as encryption, secure APIs,
        and regular updates, which help safeguard user data and transactions
 
-    1. Scalability: Adhering to best practices allows for scalability, ensuring that the digital wallet
+    1. **Scalability**: Adhering to best practices allows for scalability, ensuring that the digital wallet
        can accommodate growth in the user base and transaction volume
 
-    1. Interoperability: Standards ensure interoperability, enabling the digital wallet to interact
+    1. **Interoperability**: Standards ensure interoperability, enabling the digital wallet to interact
        seamlessly with various systems and technologies
 
-    1. Regulatory Compliance: Compliance with standards can assist in meeting regulatory
+    1. **Regulatory Compliance**: Compliance with standards can assist in meeting regulatory
        requirements, reducing legal risks
 
-    1. Trust: Following recognized standards, and best practices can enhance trust among users and
+    1. **Trust**: Following recognized standards, and best practices can enhance trust among users and
        partners
 
-    1. Risk Management: Assurance models aid in identifying and managing risks, contributing to
+    1. **Risk Management**: Assurance models aid in identifying and managing risks, contributing to
        the overall security and reliability of the digital wallet
 
-    1. Validation: They offer a framework for validating that the digital wallet meets specified
+    1. **Validation**: They offer a framework for validating that the digital wallet meets specified
        requirements and standards
 
-    1. Continuous Improvement: Assurance models support continuous improvement by providing
+    1. **Continuous Improvement**: Assurance models support continuous improvement by providing
        benchmarks and metrics for evaluating performance
 
-    1. Stakeholder Confidence: Demonstrating that the digital wallet has been thoroughly evaluated
+    1. **Stakeholder Confidence**: Demonstrating that the digital wallet has been thoroughly evaluated
        and meets recognized standards, assurance models can increase confidence among
        stakeholders
 
@@ -659,7 +659,7 @@ vulnerabilities that can be exploited by adversaries:
 Supporting functions for digital wallets are mechanisms specific to a digital wallet that enable, or support, 
 external party processes and the functions, features and capabilities required to support specific use-cases, applicable standards requirements, trust frameworks and regulatory requirements.
 
-1. Wallet and Device Locking and Unlocking Mechanisms: A safe digital wallet will provide a secure and
+1. **Wallet and Device Locking and Unlocking Mechanisms**: A safe digital wallet will provide a secure and
    user-friendly means through which an authorized holder may unlock and lock it to minimize
    fraudulent use. While these lock/unlock mechanisms, typically driven by the wallet provider, are
    detailed here separately and apart from holder authentication, although they may utilize similar
@@ -695,10 +695,10 @@ external party processes and the functions, features and capabilities required t
     1. If implemented, the wallet must properly secure the PIN/Password and must not persist the
        PIN/Password in memory after an authentication event
 
-1. Authentication: Authentication and device locking/unlocking in the context of digital wallets are
+1. **Authentication**: Authentication and device locking/unlocking in the context of digital wallets are
    closely related as the same methods used to authenticate to access the wallet may be used to lock
    and unlock it. As we transition into the topic of authentication, it's important to understand that
-   these two concepts—locking/unlocking and authentication—are closely intertwined in the context of
+   these two concepts — locking/unlocking and authentication — are closely intertwined in the context of
    digital wallet security and the mechanisms and methods described below may apply to both.
    Authentication refers to the process of verifying the identity of a user before granting access to the
    wallet. This process is crucial for ensuring its security and protecting it from unauthorized access. For
@@ -709,12 +709,12 @@ external party processes and the functions, features and capabilities required t
        wallet developers. Wallet authentication mechanisms may vary in level of assurance and
        implementation and include, but are not limited to:
 
-        1. PIN or password requirements: A PIN or password should implement complex rules to
+        1. **PIN or password requirements**: A PIN or password should implement complex rules to
            minimize the chance of it being guessed. These rules could include minimum length
            requirements, restrictions against patterns or dictionary words and rate limiting and are
            specifically detailed
 
-        1. Multi-Factor Authentication (MFA), as defined by NIST SP 800-63-4 B (draft), is an
+        1. **Multi-Factor Authentication (MFA)**, as defined by NIST SP 800-63-4 B (draft), is an
            authentication system that requires more than one distinct authentication factor. It can be
            performed using a multi-factor authenticator or by a combination of authenticators that
            provide distinct factors. Authentication factors include:
@@ -726,8 +726,9 @@ external party processes and the functions, features and capabilities required t
             - Something you are (e.g., biometric data like a fingerprint or face scan)
               
            An example of a multi-factor authenticator could be a cryptographic authentication device
-           with an integrated biometric sensor that is required to activate the device
-        1. Phishing-resistant authentication is a method to prevent attackers from gaining access to
+           with an integrated biometric sensor that is required to activate the device.
+
+        1. **Phishing-resistant authentication** is a method to prevent attackers from gaining access to
            sensitive information through deceptive practices. Phishing-resistant authenticators are
            defined by their ability to detect and prevent the disclosure of authentication secrets and
            valid authenticator outputs to an impostor relying party without relying on the vigilance of
@@ -738,18 +739,18 @@ external party processes and the functions, features and capabilities required t
             - PKI-encrypted smart cards
             - Biometric authentication
             - FIDO Passkeys
-        1. Step-up authentication is a security measure that is distinct from multi-factor authentication
+        1. **Step-up authentication** is a security measure that is distinct from multi-factor authentication
            as it requires wallet holders to provide additional proof of their identity when they attempt to
            access sensitive resources or when performing high-risk actions
 
-1. Holder Binding: Digital wallets are applications used to receive, store, and share attributes in a secure,
+1. **Holder Binding**: Digital wallets are applications used to receive, store, and share attributes in a secure,
    privacy enhancing fashion. To prove that the legitimate, natural person is receiving, in possession of,
    or sharing these attributes requires a means to bind the wallet and the credentials it manages to the
    natural person.
 
    In 1995, for example, the International Civil Aviation Organization (ICAO) clearly recognized the
    desirability of pursuing the use of biometrics in travel documents as the single best way to link the
-   document and its rightful “owner.”[^3] In this example, the issuing authority binds the identity
+   document and its rightful "owner."[^3] In this example, the issuing authority binds the identity
    attributes to the authorized holder during the issuance process by including biometric data in the
    cryptographically signed logical data structure. When the holder makes an identity claim, the Relying
    Party (verifier) can determine the authenticity and integrity of the identity attributes and, through
@@ -798,36 +799,36 @@ relying party can confirm what checks the issuer carried out
         1. The wallet must have a mechanism to bind the private keys within the wallet that are used
            for proving possession, for signing, etc., to each holder. For example:
 
-             - Device keys are bound to the device
+             - Device keys are bound to the device.
 
-             - A holder is bound to the device keys via the device OS
+             - A holder is bound to the device keys via the device OS.
 
              - A holder is bound to an identity credential via the biometric contained in the identity
-credential
+credential.
 
              - The identity credential is bound to the device via the device keys included in the
-               identity credential (and signed by the issuer)
+               identity credential (and signed by the issuer).
 
              - A relying party will need a mechanism to determine the level of confidence it can
-               place in each of these bindings
+               place in each of these bindings.
 
         1. This mechanism should operate within a secure enclave or trusted execution environment.
 
     1. Holder binding at the point of presentation:
 
         1. The wallet should have a mechanism to check that the person releasing a presentation
-           (“proof”) to a relying party is the same person to whom the credential was issued
+           ("proof") to a relying party is the same person to whom the credential was issued.
 
         1. The wallet may be able to inform the relying party what mechanism it used to perform such a
-           check and provide evidence of the success of the check
+           check and provide evidence of the success of the check.
 
         1. The wallet should support multiple methods for executing holder binding at the point of
-           presentation e.g. PIN entry, biometrics
+           presentation e.g. PIN entry, biometrics.
 
         1. The wallet should have the ability to configure the holder binding checking it does in
-           response to a trigger in the relying party’s proof request, i.e. the relying party can request a
+           response to a trigger in the relying party's proof request, i.e. the relying party can request a
            high assurance binding check for a high value transaction, or a low assurance check (with less
-           friction) for a low assurance transaction
+           friction) for a low assurance transaction.
 
 1. Additional information regarding biometrics in holder binding: In each of the Holder binding sub-
    categories where biometrics are used as part of the binding process, the additional factors described
@@ -848,18 +849,18 @@ credential
 
    The EU Digital Identity Wallet legislation, for example, calls for Level of Assurance HIGH for User
    Authentication which necessitates the use of two of three factors where one factor can be inherence.
-   This is where, “the applicant is identified as the claimed identity through comparison of one or more
-   physical characteristic of the person with an authoritative source;” and “‘authoritative source’ means
+   This is where, "the applicant is identified as the claimed identity through comparison of one or more
+   physical characteristic of the person with an authoritative source;" and "'*authoritative source*' means
    any source irrespective of its form that can be relied upon to provide accurate data, information
-   and/or evidence that can be used to prove identity;”
+   and/or evidence that can be used to prove identity;"
 
-   An ‘authoritative source’ for high-risk use cases requires biometric data to be captured live by a
+   An 'authoritative source' for high-risk use cases requires biometric data to be captured live by a
    trusted entity, evaluated to be of sufficient quality for automated recognition, and determined to be
    unique within the target population to an acceptable False Positive Identification Rate (FPIR) at a
    specified False Negative Identification Rate (FNIR). This is typically performed by a government
-   agency where, per NIST SP 800-63A and others, the “Expected Outcomes of Identity Proofing” is to
-   “Resolve a claimed identity to a single, unique identity within the context of the population of users
-   the CSP serves.”4 Comparing a physical attribute of a natural person to one encoded on, or in, a
+   agency where, per NIST SP 800-63A and others, the "Expected Outcomes of Identity Proofing" is to
+   "Resolve a claimed identity to a single, unique identity within the context of the population of users
+   the CSP serves." 4 Comparing a physical attribute of a natural person to one encoded on, or in, a
    government issued credential is NOT identity proofing, it is identity verification.
 
    For identity resolution (aka, deduplication) we are more concerned with the false negatives (the
@@ -875,8 +876,8 @@ risk-based challenges. Wallets sit at the confluence between Counterparties who 
 and Relying Parties who depend on digital identity information from trusted sources to provide services
 and may be subject to multiple requirements from both for:
 
-1. Regulatory Compliance: For widespread adoption of digital wallets, there must be guardrails in place
-   where both public- and private-sector implementers can turn to understand conformance - and for
+1. **Regulatory Compliance**: For widespread adoption of digital wallets, there must be guardrails in place
+   where both public - and private-sector implementers can turn to understand conformance - and for
    the public to derive trust.
 
    There is a balance to be struck between the enforcement of legislative rules through technological
