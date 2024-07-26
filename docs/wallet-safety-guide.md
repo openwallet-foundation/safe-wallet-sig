@@ -87,12 +87,12 @@ managers. The document emphasizes four fundamental Pillars for Safe Wallets:
 ## Pillar 1: Privacy
 
 From a high level, the concept of Privacy and Privacy by Design (PbD) takes on a unique significance when
-applied to digital wallets. Privacy in this context primarily pertains to the protection of a holder’s activities
+applied to digital wallets. Privacy in this context primarily pertains to the protection of a holder's activities
 from unwanted observation, tracking, and correlation.
 
 Digital wallets and the digital credentials they manage, along with the complex cryptography and
 protocols involved in their issuance, presentation (or exchange), and verification, introduce a new set of
-challenges that don’t exist in the world of physical credentials. These challenges are integral to a wallet’s
+challenges that don't exist in the world of physical credentials. These challenges are integral to a wallet's
 functionality and need to be implemented with privacy considerations in mind.
 
 The PbD approach in this context would involve:
@@ -121,9 +121,9 @@ regulatory responsibilities, reduce (minimize) data breaches, and foster trust w
 approach ensures that privacy is not an afterthought, but a fundamental aspect of the design and
 operation of digital wallets. Elements for consideration include:
 
-1. Unique Identifiers:
+1. **Unique Identifiers**:
 
-    1. Unique identifiers specific to the holder or wallet, which may be shared without the holder’s
+    1. Unique identifiers specific to the holder or wallet, which may be shared without the holder's
        consent during each transaction, should be avoided. These can be considered as follows:
 
         1. Akin to a tracking beacon that allows colluding entities to correlate all activities of a
@@ -141,8 +141,8 @@ operation of digital wallets. Elements for consideration include:
        unique identifiers that should be avoided and include:
 
         1. Identifiers specific to a credential, which a holder inevitably shares, can lead to
-           transaction correlation each time that credential is used. Although this doesn’t impact
-           privacy as much as a holder or wallet-specific identifier, it’s still a concern because it isn’t
+           transaction correlation each time that credential is used. Although this doesn't impact
+           privacy as much as a holder or wallet-specific identifier, it's still a concern because it isn't
            necessarily shared with every transaction. Examples of credential-specific identifiers are:
 
             - Revocation index position or an issuer signature in the “metadata” of the
@@ -151,35 +151,35 @@ operation of digital wallets. Elements for consideration include:
             - Payment credentials which may contain unique identifiers for compliance
               within the financial services industry
 
-1. Decoupling issuers and verifiers are a fundamental aspect of implementing privacy and aligning with
+1. **Decoupling issuers and verifiers** are a fundamental aspect of implementing privacy and aligning with
    the principles of Privacy by Design. It aids in safeguarding user data, preventing unwanted tracking,
    and enhancing user autonomy and trust. The importance of separating the roles of issuers and
    verifiers in the context of digital wallets is multi-fold:
 
     1. **Reduced Data Exposure**: If issuers and verifiers are distinct, the personal data revealed during
-       transactions can be kept to a minimum. The party verifying the credential doesn’t need to know
-       its issuer, and vice versa
+       transactions can be kept to a minimum. The party verifying the credential doesn't need to know
+       its issuer, and vice versa.
 
     1. **Avoiding Correlation**: Keeping issuers and verifiers separate helps avoid the correlation of
        transactions. If a single entity were to issue and verify a credential, it could potentially track its
-       usage, compromising the user’s privacy
+       usage, compromising the user's privacy.
 
     1. **Increased User Autonomy**: Users have more control over their data when issuers and verifiers are
        not the same. They can choose to share their credentials without the issuers knowing where and
-       when those credentials are being used
+       when those credentials are being used.
 
     1. **Trust Building**: Trust among users is fostered when issuers and verifiers are decoupled, as users
        can be confident that no single entity has access to all their transaction data. This can lead to a
-       broader acceptance of digital wallets
+       broader acceptance of digital wallets.
 
-    1. Issuers and verifiers of digital credentials should not be able to track their use which would
+    1. **Issuers and verifiers of digital credentials** should not be able to track their use which would
        enable them to, for example, build user profiles. However, transactions where usage tracking is a
        fundamental part of the use case that holders are fully aware of (payments being an example)
-       would be accepted in that context
+       would be accepted in that context.
 
-    1. Issuers should not be able to aggregate holder information
+    1. Issuers should not be able to aggregate holder information.
     
-    1. Preventing verifiers from contacting issuers (a process known as decoupling) for any reason,
+    1. **Preventing verifiers from contacting issuers** (a process known as decoupling) for any reason,
        including to verify the revocation status of digital credentials, is crucial. Without this decoupling,
        issuers could potentially monitor the usage of digital credentials. This could happen through
        hidden interactions between issuers and verifiers that occur without the knowledge or consent of
@@ -189,32 +189,32 @@ operation of digital wallets. Elements for consideration include:
     1. Issuers and Verifiers should not be able to access a digital wallet without explicit holder Notice and
        Consent
 
-1. Support for Privacy-Enhancing Credential Sharing Mechanisms in Wallets. The wallet should
+1. Support for **Privacy-Enhancing Credential Sharing Mechanisms** in Wallets. The wallet should
    incorporate mechanisms that preserve privacy, and ensure that only a specific subset of data
    attributes within a credential are disclosed. An example could be sharing only the first name and
-   photo from a driver’s license, rather than all the information on the license. Additionally, these
+   photo from a driver's license, rather than all the information on the license. Additionally, these
    mechanisms should allow for the verification of data possession without exposing the actual data
    values. An example of this could be verifying if a user is over 18 without revealing their exact date of
    birth. This can be achieved using techniques such as selective disclosure, calculated or predetermined
    predicate proofs and zero-knowledge proofs.
 
-1. Privacy of Wallet Transactions should be preserved and the entities that provide the code and/or
+1. **Privacy of Wallet Transactions** should be preserved and the entities that provide the code and/or
    operate the cloud services for digital wallets should not have the ability to monitor or track the
    transactions carried out by the wallet holders. This is especially crucial for:
 
     1. Code providers and contributors and/or cloud operators of digital wallets must not be able to
-       observe or track transactions undertaken by holders
+       observe or track transactions undertaken by holders.
 
     1. This is particularly important in the case of hybrid and cloud wallets, where transactions are
-       performed on the wallet operator’s infrastructure
+       performed on the wallet operator's infrastructure.
 
     1. Wallet code providers and cloud operators must not be able to access the contents of digital
-       wallet transactions log files or backups
+       wallet transactions log files or backups.
 
     1. Wallet code providers and cloud operators must not have a “master key” or “back-door” that
-       enables them to access the contents of wallets
+       enables them to access the contents of wallets.
 
-1. Digital Wallet ecosystem providers or organizations that provide the infrastructure to which digital
+1. **Digital Wallet ecosystem providers or organizations** that provide the infrastructure to which digital
    wallets connect to issue or verify credentials (typically called credential exchange platforms) must not
    be able to examine the contents, source or destination of wallet transactions. Specific considerations
    are:
@@ -229,12 +229,12 @@ holder privacy.
 verifiers. In doing so, they could observe and correlate wallet transactions across large
 ecosystems and should:
 
-        1. Not observe, store and correlate wallet transactions
+        1. Not observe, store and correlate wallet transactions.
 
         1. Provide clear Notice and Consent that they are dealing with a proxy service rather than
-           the true end issuer/verifier
+           the true end issuer/verifier.
 
-1. Wallet Consent management is a key component of privacy by design, ensuring that privacy is not an
+1. **Wallet Consent management** is a key component of privacy by design, ensuring that privacy is not an
    afterthought, but a fundamental aspect of the design and operation of digital wallets. It helps to
    protect user data, prevent unwanted tracking, and enhance user control and trust and is critical to
    privacy for several reasons:
@@ -265,7 +265,7 @@ ecosystems and should:
     1. **Record of Notice and Consent**: Holders must be able to track the Notices provided and consents
        given and should be able to withdraw that consent at any time
 
-    1. Enable Wallet privacy preserving supporting functions: The act of providing consent by the holder
+    1. **Enable Wallet privacy preserving supporting functions**: The act of providing consent by the holder
        should not compromise privacy
 
 ## Pillar 2: Security
@@ -296,7 +296,7 @@ wallets may store sensitive identity and financial information, they are appeali
 cybercriminals. Therefore, it is crucial for digital wallet developers and providers to take necessary
 precautions to secure digital assets and their exchange for wallet holders.
 
-The Digital Identity and Authentication Council of Canada’s (DIACC's) Digital Wallet Component
+The Digital Identity and Authentication Council of Canada's (DIACC's) Digital Wallet Component
 Conformance Criteria states: "The integrity of a Trusted Process is paramount because many Participants
 may rely on the output of the process, often across jurisdictional, organizational, and sectoral
 boundaries". DIACC's Digital Wallet Conformance Profile[^2] also includes a comprehensive breakout
@@ -321,39 +321,39 @@ attestation that can be relied upon.
    adoptable wallet-holder experience. Wallet selection can pose several security risks and
    considerations for prevention include (but are not limited to):
 
-    1. Malware:
+    1. **Malware**:
 
         1. **Regular Software Updates**: Continually update wallet software, operating systems,
            internet browsers, phone firmware, and antivirus software to fix known vulnerabilities as
            they are discovered
 
-        1. Secure connections and end-point management for all network interactions, including
+        1. **Secure connections and end-point management** for all network interactions, including
            NFC and Bluetooth low-energy enabled hardware
 
-        1. Phishing resistant authentication
+        1. **Phishing resistant authentication**
 
-        1. Obtain wallet software from official sources
+        1. **Obtain wallet software from official sources**
 
-        1. Root detection for mobile devices
+        1. **Root detection** for mobile devices
 
-    1. Social Engineering prevention involves a combination of technical measures, policy enforcement
+    1. **Social Engineering prevention** involves a combination of technical measures, policy enforcement
        and wallet holder education. Strategies for mitigation include:
 
         1. **User Education**: Users should be educated about the common tactics used in social
            engineering attacks and how to identify potential scams
 
-        1. Phishing resistant authentication
+        1. **Phishing resistant authentication**
 
-        1. End-point security
+        1. **End-point security**
 
-        1. Regular audits of accounts and access levels
+        1. **Regular audits** of accounts and access levels
 
-        1. Software updates to prevent evolving known vulnerabilities
+        1. **Software updates** to prevent evolving known vulnerabilities
 
-        1. Policy enforcement for policies and procedures that consider potential social engineering
+        1. **Policy enforcement** for policies and procedures that consider potential social engineering
            vectors and provide specific guidance on steps to take to avoid successful attacks
 
-        1. Brute Force Attack Mitigation options:
+        1. **Brute Force Attack Mitigation** options:
 
             1. Phishing resistant authentication
 
@@ -361,7 +361,7 @@ attestation that can be relied upon.
 
             1. Strong data encryption and storage
 
-        1. End-point authentication to prevent Man-in-the-Middle Attacks such as:
+        1. **End-point authentication** to prevent Man-in-the-Middle Attacks such as:
 
             1. Relay Attacks: Relaying information between parties
 
@@ -371,7 +371,7 @@ attestation that can be relied upon.
    generation, storage, and management of its keys and is an essential function involving the handling
    and safeguarding of cryptographic keys to ensure the security and integrity of the holder's digital
    assets and it is essential that the design be reviewed by multiple cryptographers. Primary security
-   considerations and controls for key management and key generation are a vital part of a wallet’s
+   considerations and controls for key management and key generation are a vital part of a wallet's
    cryptographic systems and require considerable care to ensure security such as:
 
     1. **Random Number Generator Quality**: It is important to use a high-quality random number
@@ -408,7 +408,7 @@ attestation that can be relied upon.
 
     1. **Audit**: Processes for logging, detecting and providing notice of security risks to keys
 
-    1. Private Key Management to prevent exposure during the rendering of transaction processes
+    1. **Private Key Management** to prevent exposure during the rendering of transaction processes
 
 1. **Credential Signature / Format**: A credential signature in the context of a digital wallet is a digital proof
    that verifies the authenticity of the credential. For a secure credential signature, it is important for
@@ -463,7 +463,7 @@ attestation that can be relied upon.
     1. Phishing-resistant user authentication to ensure the holder presenting the credentials is the
        legitimate holder of both the wallet and the credential
 
-    1. Secure, Phishing and ‘spoof’ resistant user interface
+    1. Secure, Phishing and 'spoof' resistant user interface
 
     1. Strong data encryption and storage to secure credentials and prevent unauthorized access
 
@@ -484,7 +484,7 @@ attestation that can be relied upon.
     1. Phishing-resistant user authentication to ensure the holder providing consent is the legitimate
        holder of both the wallet and the credential
 
-    1. Phishing and ‘spoof’ resistant user interface
+    1. Phishing and 'spoof' resistant user interface
                                                                                                                 
     1. Strong data encryption and storage to secure sensitive data and consent records and prevent
        unauthorized access
@@ -570,7 +570,7 @@ vulnerabilities that can be exploited by adversaries:
 1. **Secure by Default**: A principle aimed at shifting the burden of security as much as possible away from
    the holder back to the wallet developer(s). It is about designing wallets that require minimal
    hardening and are secure when deployed. In the context of digital wallets this is much harder to do
-   than secure by design, as each wallet holder’s environment is different. What works well for one
+   than secure by design, as each wallet holder's environment is different. What works well for one
    wallet architecture might not work for another. It is also important to consider that secure by default
    features go through rigorous testing and periods of customer feedback to ensure benefit to the
    largest number of end users possible.
@@ -623,7 +623,7 @@ vulnerabilities that can be exploited by adversaries:
    practices and assurance models along with standards can offer numerous advantages for digital
    wallets such as:
 
-    1. **Quality Assurance**: Compliance with best practices and standards ensures the software’s
+    1. **Quality Assurance**: Compliance with best practices and standards ensures the software's
        quality, leading to a more reliable and robust digital wallet
 
     1. **Security**: Best practices often encompass security measures such as encryption, secure APIs,
@@ -765,7 +765,7 @@ external party processes and the functions, features and capabilities required t
    by comparing the portrait image from the authenticated credential to the presenter of the
    credential).
 
-    1. Holder binding to the device and wallet:
+    1. **Holder binding to the device and wallet**:
 
         1. The wallet should have a mechanism to associate, and differentiate, one or more natural
            persons to the device as part of the wallet provisioning and setup process
@@ -783,9 +783,9 @@ external party processes and the functions, features and capabilities required t
            changed (e.g. the addition of a new fingerprint which could come from another person)
 
         1. The wallet may have its own person binding method in addition to the one implemented by
-           the device’s operating system
+           the device's operating system
 
-    1. Holder binding to their credentials at issuance:
+    1. **Holder binding to their credentials at issuance**:
 
         1. The wallet should provide a mechanism whereby the issuer is able to confirm that the person
 they are issuing the credential to is the correct person.
@@ -794,7 +794,7 @@ they are issuing the credential to is the correct person.
 confirmation that such a check has been performed, and how it was performed, such that a
 relying party can confirm what checks the issuer carried out
 
-    1. Holder binding to their keys (see Key Management in the Security section):
+    1. **Holder binding to their keys** (see Key Management in the Security section):
 
         1. The wallet must have a mechanism to bind the private keys within the wallet that are used
            for proving possession, for signing, etc., to each holder. For example:
@@ -814,7 +814,7 @@ credential.
 
         1. This mechanism should operate within a secure enclave or trusted execution environment.
 
-    1. Holder binding at the point of presentation:
+    1. **Holder binding at the point of presentation**:
 
         1. The wallet should have a mechanism to check that the person releasing a presentation
            ("proof") to a relying party is the same person to whom the credential was issued.
@@ -830,7 +830,7 @@ credential.
            high assurance binding check for a high value transaction, or a low assurance check (with less
            friction) for a low assurance transaction.
 
-1. Additional information regarding biometrics in holder binding: In each of the Holder binding sub-
+1. **Additional information regarding biometrics in holder binding**: In each of the Holder binding sub-
    categories where biometrics are used as part of the binding process, the additional factors described
    in this section should be considered.
 
@@ -844,7 +844,7 @@ credential.
    selfie captured in real-time against the selfie captured during registration may be sufficient for some
    use cases - but not for others. Edge authentication, where the native or a 3rd party biometric sensor
    and/or matcher is used, is inherently lower assurance than in-person authentication where the
-   relying party’s biometric sensor and matcher are used and where the relying party can determine
+   relying party's biometric sensor and matcher are used and where the relying party can determine
    quality and match thresholds.
 
    The EU Digital Identity Wallet legislation, for example, calls for Level of Assurance HIGH for User
@@ -893,7 +893,7 @@ and may be subject to multiple requirements from both for:
     1. Legislation that organizations need to adhere to while processing data. E.g., Article 30 of the
        GDPR places an obligation on controllers and processors (organizations, issuers/verifiers) to have
        in place within their organizations a detailed record of activities the organization conducts which
-       use personal data
+       use personal data.
 
     1. Legislation that ensures the digital rights of the individuals are considered. The GDPR has a
        chapter on the rights of data subjects (individuals) which includes the right of access, the right to
@@ -901,39 +901,39 @@ and may be subject to multiple requirements from both for:
        the right to object and the right not to be subject to a decision based solely on automated
        processing. For example, Article 7 (1) of GDPR states that in situations where the processing of
        data is based on consent, the controller shall be able to demonstrate that the data subject has
-       consented to the processing of his or her personal data
+       consented to the processing of his or her personal data.
 
-1. Certification: Certification in the context of digital wallets relates to the formal evaluation of products
+1. **Certification**: Certification in the context of digital wallets relates to the formal evaluation of products
    according to standards such as Common Criteria. It is closely associated with the Legislation
    Compliance topic since digital wallet regulations in some cases include specific certification
    requirements. This guide does not intend to list all applicable certification criteria for all use cases in
    all jurisdictions. Instead, it provides a list of questions that a wallet designer should be able to answer
    relating to the certification compliance of their wallet for its intended usage scenarios including:
 
-    1. Compliance with regulations: The wallet complies with national or regional certification
+    1. **Compliance with regulations**: The wallet complies with national or regional certification
        requirements. For example the eIDAS Revision regulation, where EUDI Wallet certification is
        mandatory.
 
-    1. Components to be certified and/or attested to:
+    1. **Components to be certified and/or attested to**:
 
         1. Does the digital wallet mobile app have to be certified, and to which certification standard? If
            so, is the digital wallet certified?
 
         1. Does the secure element in the mobile device have to be certified, and to which certification
            standard? If so, is the secure element certified? For example: Common Criteria or
-           GlobalPlatform certification
+           GlobalPlatform certification.
 
         1. Does the digital wallet backend have to be certified, and to which certification standard? For
-           example: ISO 27001 audit
+           example: ISO 27001 audit.
 
         1. Are there any other components in the digital wallet eco-system to be certified, and to which
            certification standard? If so, are the other components certified? For example: HSMs that are
-           Common Criteria or FIPS 140-3 certified
+           Common Criteria or FIPS 140-3 certified.
 
-    1. Evidence of certification:
+    1. **Evidence of certification**:
 
         1. The digital wallet provider must supply evidence to the holder that its certification is up to
-           date
+           date.
 
         1. Is there a certification body (in the applicable country/region) that publishes lists of certified
            digital wallets?
@@ -941,7 +941,7 @@ and may be subject to multiple requirements from both for:
         1. Does the certification body publish certificates or reports about the digital wallet
            certifications?
 
-1. Counterparties: In the context of a digital wallet, a counterparty is a person, organisation or thing to
+1. **Counterparties**: In the context of a digital wallet, a counterparty is a person, organisation or thing to
    whom a digital wallet is connecting to execute a transaction. The counterparty could be an issuer of
    credentials, an online shop requesting age verification, a police officer, or a passport e-gate etc.
 
@@ -952,70 +952,70 @@ and may be subject to multiple requirements from both for:
 
             - If the holder is being offered a new digital credential by an organization, the holder
               should be able to quickly and easily identify the organization and see that it is
-              legitimate
+              legitimate.
 
             - When the holder is being asked to digitally sign a contract, the holder should be able
-              to quickly identify the who the requester is and determine that they are legitimate
+              to quickly identify the who the requester is and determine that they are legitimate.
 
             - The holder should be able to proactively send a verification request to an
-              organization (or another user) to determine that they are legitimate
+              organization (or another user) to determine that they are legitimate.
 
         1. The holder should be able to see several levels of detail about the counterparty. For example:
 
             - Visual confirmation (green tick style) that the counterparty has been verified by an
-              authority
+              authority.
 
-            - Detail about the counterparty’s identity, for example legal identifier, company name,
-              registered address, incorporation number
+            - Detail about the counterparty's identity, for example legal identifier, company name,
+              registered address, incorporation number.
 
             - Detail about a verification that has taken place e.g. digital signature matches,
               vouching organization process, Legal Entity Identifier details, legal and regulatory
-              obligations the counterparty may have regarding revealing the shared information
+              obligations the counterparty may have regarding revealing the shared information.
 
         1. The holder should be able to quickly and easily determine that the counterparty is allowed to
            ask what they are asking, and if it is a reasonable request such as:
 
             - Certain regulations may impose limitations on data sharing transactions, dictating
               who can request specific information. This information should be conveyed to the
-              user
+              user.
 
             - The digital wallet should have the capability to automatically dismiss requests that
               are not permitted. The digital wallet should incorporate a rules engine, or something
               similar, to ascertain whether a particular request from a specific issuer is not allowed
-              in one jurisdiction but is permissible in another
+              in one jurisdiction but is permissible in another.
 
             - The digital wallet should confirm the legitimacy of an issuer and their authorization to
-              issue the proposed type of credential and provide appropriate evidence to the holder
+              issue the proposed type of credential and provide appropriate evidence to the holder.
 
-1. Audit: Digital wallets have a strong connection with Privacy and Legislative Compliance issues. There
-   can be conflicts between audit and privacy requirements. It’s crucial to carefully design a digital
+1. **Audit**: Digital wallets have a strong connection with Privacy and Legislative Compliance issues. There
+   can be conflicts between audit and privacy requirements. It's crucial to carefully design a digital
    wallet that can effectively strike a balance between user privacy and regulatory Considerations
    include:
 
-    1. User Audit: Holders of a digital wallet should be able to view all their transactions, use them as
-       evidence of activities such as proof of purchase, and can erase their transaction history
+    1. **User Audit**: Holders of a digital wallet should be able to view all their transactions, use them as
+       evidence of activities such as proof of purchase, and can erase their transaction history.
 
-    1. Legal Audit:
+    1. **Legal Audit**:
 
         1. The digital wallet may need to provide an activity log for one or more actions under legal
-       authority
+       authority.
 
         1. Digital wallets, like any other technology, are subject to local laws and regulations. In certain
            specific circumstances, such as a criminal investigation, legal authorities may have the right to
-           examine the content and transaction history of a holder’s digital wallet. This would be similar
-           to how they can execute a search warrant to inspect the contents of a person’s physical
+           examine the content and transaction history of a holder's digital wallet. This would be similar
+           to how they can execute a search warrant to inspect the contents of a person's physical
            property, like a filing cabinet. However, the specifics can vary based on the jurisdiction and
-           the privacy policies of the digital wallet provider. It’s important for holders to understand the
-           terms of service and privacy policies associated with their digital wallet
+           the privacy policies of the digital wallet provider. It's important for holders to understand the
+           terms of service and privacy policies associated with their digital wallet.
 
-1. Accountability: Accountability: Digital wallets facilitate access to services from various entities, and
+1. **Accountability**: Digital wallets facilitate access to services from various entities, and
    there should be mechanisms to hold the responsible parties accountable. Like most categories of Safe
    Digital Wallets, the prerequisites for accountability can be bifurcated into:
 
-    1. Technical strategies, which involve the use of hardware, software, and protocols
+    1. **Technical strategies**, which involve the use of hardware, software, and protocols.
 
-    1. Governance strategies, which necessitate human intervention in adherence to established laws,
-       regulations, policies, rules, or even through reputation systems
+    1. **Governance strategies**, which necessitate human intervention in adherence to established laws,
+       regulations, policies, rules, or even through reputation systems.
 
 
 [^1]: <https://digital-strategy.ec.europa.eu/en/policies/eudi-wallet-toolbox>
