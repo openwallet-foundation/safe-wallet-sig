@@ -1,7 +1,7 @@
 # Wallet Safety Guide
 OpenWallet Foundation Safe Wallet Special Interest Group (OWF-SW-SIG)<br/>
-v1.1<br/>
-16th July 2024<br/>
+v1.1.1<br/>
+30th July 2024<br/>
 Copyright (c) 2024 OpenWallet Foundation.<br/>
 <br/>
 These materials are made available under and are subject to the Creative Commons Attribution 4.0 International license (http://creativecommons.org/licenses/by/4.0/legalcode).<br/>
@@ -14,6 +14,7 @@ IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR 
 
 | Version | Date | Changes | Authors |
 | ------- | -------------- | -------------------------- | --------------------- |
+| v1.1.1 | 30th July 2024 | Formatting changes to make more readable | Stavros Kounis <br/> Tracy Kuhrt |
 | v1.1   | 16th July 2024 | Add front-matter; reformat for Markdown | Sean Bohan <br/> Tracy Kuhrt |
 | v1.0.2 | 10th July 2024 | Final editorial pass, add comments from Safe Wallet SIG | Juliana Cafik |
 | v1.0.1 | 27th June 2024 | Full Edit for _tone_ consistency, reduce duplications, add additional detail and/or context, to align under 4 Pillars and add Executive Summary | Juliana Cafik |
@@ -156,7 +157,7 @@ operation of digital wallets. Elements for consideration include:
    and enhancing user autonomy and trust. The importance of separating the roles of issuers and
    verifiers in the context of digital wallets is multi-fold:
 
-    1. **Reduced Data Exposure**: If issuers and verifiers are distinct, the personal data revealed during
+    1. **Reducing Data Exposure**: If issuers and verifiers are distinct, the personal data revealed during
        transactions can be kept to a minimum. The party verifying the credential doesn't need to know
        its issuer, and vice versa.
 
@@ -164,7 +165,7 @@ operation of digital wallets. Elements for consideration include:
        transactions. If a single entity were to issue and verify a credential, it could potentially track its
        usage, compromising the user's privacy.
 
-    1. **Increased User Autonomy**: Users have more control over their data when issuers and verifiers are
+    1. **Increasing User Autonomy**: Users have more control over their data when issuers and verifiers are
        not the same. They can choose to share their credentials without the issuers knowing where and
        when those credentials are being used.
 
@@ -172,24 +173,24 @@ operation of digital wallets. Elements for consideration include:
        can be confident that no single entity has access to all their transaction data. This can lead to a
        broader acceptance of digital wallets.
 
-    1. **Issuers and verifiers of digital credentials** should not be able to track their use which would
+    1. **Avoiding Tracking**: Issuers and verifiers of digital credentials should not be able to track their use which would
        enable them to, for example, build user profiles. However, transactions where usage tracking is a
        fundamental part of the use case that holders are fully aware of (payments being an example)
        would be accepted in that context.
 
-    1. Issuers should not be able to aggregate holder information.
+    1. **Avoiding Aggregation**: Issuers should not be able to aggregate holder information.
     
-    1. **Preventing verifiers from contacting issuers** (a process known as decoupling) for any reason,
+    1. **Decoupling**: Preventing verifiers from contacting issuers (a process known as decoupling) for any reason,
        including to verify the revocation status of digital credentials, is crucial. Without this decoupling,
        issuers could potentially monitor the usage of digital credentials. This could happen through
        hidden interactions between issuers and verifiers that occur without the knowledge or consent of
        the credential holders. This issue, often referred to as the “phone home” problem, should be
-       avoided
+       avoided.
 
-    1. Issuers and Verifiers should not be able to access a digital wallet without explicit holder Notice and
-       Consent
+    1. **Ensuring Explicit Consent**: Issuers and Verifiers should not be able to access a digital wallet without explicit
+       holder Notice and Consent.
 
-1. Support for **Privacy-Enhancing Credential Sharing Mechanisms** in Wallets. The wallet should
+1. **Privacy-Enhancing Credential Sharing Mechanisms** should be supported in Wallets. The wallet should
    incorporate mechanisms that preserve privacy, and ensure that only a specific subset of data
    attributes within a credential are disclosed. An example could be sharing only the first name and
    photo from a driver's license, rather than all the information on the license. Additionally, these
@@ -220,14 +221,14 @@ operation of digital wallets. Elements for consideration include:
    are:
 
     1. In situations, such credential exchange platforms will need to “translate” from an encrypted
-credential envelope to/from clear text for integration with other systems, such as customer
-onboarding systems. In this case, the credential exchange platform must manage the data in such
-a way that it is encrypted, transient and not stored, observable, or trackable to protect wallet
-holder privacy.
+       credential envelope to/from clear text for integration with other systems, such as customer
+       onboarding systems. In this case, the credential exchange platform must manage the data in such
+       a way that it is encrypted, transient and not stored, observable, or trackable to protect wallet
+       holder privacy.
 
     1. Proxy services may provide credential issuance/verification services for many issuers and
-verifiers. In doing so, they could observe and correlate wallet transactions across large
-ecosystems and should:
+       verifiers. In doing so, they could observe and correlate wallet transactions across large
+       ecosystems and should:
 
         1. Not observe, store and correlate wallet transactions.
 
@@ -258,7 +259,7 @@ ecosystems and should:
        data misuse. Holders can withdraw consent if they believe their data is not being used
        appropriately
 
-    1. Provide clear, understandable, and easy-to-use mechanisms for the user to provide consent to
+    1. **Consent**: Provide clear, understandable, and easy-to-use mechanisms for the user to provide consent to
        add data or read data from their wallet. This is a major privacy consideration and ensures the
        user is in control of their data.
 
@@ -702,7 +703,8 @@ external party processes and the functions, features and capabilities required t
    digital wallet security and the mechanisms and methods described below may apply to both.
    Authentication refers to the process of verifying the identity of a user before granting access to the
    wallet. This process is crucial for ensuring its security and protecting it from unauthorized access. For
-   specific requirements and guidance for authentication we reference [NIST SP 800-63-4 B (draft)](https://pages.nist.gov/800-63-4/sp800-63b.html)
+   specific requirements and guidance for authentication we reference
+   [NIST SP 800-63-4 B (draft)](https://pages.nist.gov/800-63-4/sp800-63b.html)
    but highlight the following for context:
 
     1. The mechanisms and controls to lock and unlock and authenticate to a wallet are defined by
@@ -739,6 +741,7 @@ external party processes and the functions, features and capabilities required t
             - PKI-encrypted smart cards
             - Biometric authentication
             - FIDO Passkeys
+
         1. **Step-up authentication** is a security measure that is distinct from multi-factor authentication
            as it requires wallet holders to provide additional proof of their identity when they attempt to
            access sensitive resources or when performing high-risk actions
@@ -788,11 +791,11 @@ external party processes and the functions, features and capabilities required t
     1. **Holder binding to their credentials at issuance**:
 
         1. The wallet should provide a mechanism whereby the issuer is able to confirm that the person
-they are issuing the credential to is the correct person.
+           they are issuing the credential to is the correct person.
 
         1. The issuer may be able to insert into the credential (as an attribute or metadata)
-confirmation that such a check has been performed, and how it was performed, such that a
-relying party can confirm what checks the issuer carried out
+           confirmation that such a check has been performed, and how it was performed, such that a
+           relying party can confirm what checks the issuer carried out
 
     1. **Holder binding to their keys** (see Key Management in the Security section):
 
@@ -804,7 +807,7 @@ relying party can confirm what checks the issuer carried out
              - A holder is bound to the device keys via the device OS.
 
              - A holder is bound to an identity credential via the biometric contained in the identity
-credential.
+               credential.
 
              - The identity credential is bound to the device via the device keys included in the
                identity credential (and signed by the issuer).
@@ -998,7 +1001,7 @@ and may be subject to multiple requirements from both for:
     1. **Legal Audit**:
 
         1. The digital wallet may need to provide an activity log for one or more actions under legal
-       authority.
+           authority.
 
         1. Digital wallets, like any other technology, are subject to local laws and regulations. In certain
            specific circumstances, such as a criminal investigation, legal authorities may have the right to
