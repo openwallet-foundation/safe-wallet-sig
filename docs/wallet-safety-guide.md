@@ -1,7 +1,7 @@
 # Wallet Safety Guide
 OpenWallet Foundation Safe Wallet Special Interest Group (OWF-SW-SIG)<br/>
-v1.1.1<br/>
-30th July 2024<br/>
+v1.1.2<br/>
+6th August 2024<br/>
 Copyright (c) 2024 OpenWallet Foundation.<br/>
 <br/>
 These materials are made available under and are subject to the Creative Commons Attribution 4.0 International license (http://creativecommons.org/licenses/by/4.0/legalcode).<br/>
@@ -14,6 +14,7 @@ IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR 
 
 | Version | Date | Changes | Authors |
 | ------- | -------------- | -------------------------- | --------------------- |
+| v1.1.2 | 6th August 2024 | Editorial changes and links | Tracy Kuhrt |
 | v1.1.1 | 30th July 2024 | Formatting changes to make more readable | Stavros Kounis <br/> Tracy Kuhrt |
 | v1.1   | 16th July 2024 | Add front-matter; reformat for Markdown | Sean Bohan <br/> Tracy Kuhrt |
 | v1.0.2 | 10th July 2024 | Final editorial pass, add comments from Safe Wallet SIG | Juliana Cafik |
@@ -70,19 +71,19 @@ Group (SIG) has compiled the following high-level safety guidelines to aid walle
 managers. The document emphasizes four fundamental Pillars for Safe Wallets:
 
 1. **Privacy Pillar**: Privacy by Design (PbD) is crucial for digital wallets, focusing on protecting user data
-   from unwanted observation and tracking. The document outlines principles and mechanisms to
+   from unwanted observation and tracking. The [Pillar 1: Privacy](#pillar-1-privacy) section outlines principles and mechanisms to
    ensure privacy, such as avoiding unique identifiers and decoupling issuers and verifiers
 
 2. **Security Pillar**: Security by Design and Zero Trust principles are essential for digital wallets. The
-   document details various security measures, including key management, credential management,
+   [Pillar 2: Security](#pillar-2-security) section details various security measures, including key management, credential management,
    and secure presentation protocols to prevent unauthorized access and ensure data integrity
 
-3. **Supporting Functions**: Supporting functions for digital wallets include mechanisms for wallet and
+3. **Supporting Functions Pillar**: Supporting functions for digital wallets include mechanisms for wallet and
    device locking/unlocking, user interface/user experience considerations, and holder binding. The
-   document emphasizes the importance of these functions for ensuring security and usability
+   [Pillar 3: Supporting Functions](#pillar-3-supporting-functions) section emphasizes the importance of these functions for ensuring security and usability
 
 4. **Governance Pillar**: Governance involves regulatory compliance, certification, counterparty
-   verification, and audit requirements. The document discusses the need for digital wallets to adhere to
+   verification, and audit requirements. The [Pillar 4: Governance](#pillar-4-governance) section discusses the need for digital wallets to adhere to
    legal standards and provide mechanisms for accountability and transparency
 
 ## Pillar 1: Privacy
