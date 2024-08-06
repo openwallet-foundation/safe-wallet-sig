@@ -1,20 +1,23 @@
 # Wallet Safety Guide
 OpenWallet Foundation Safe Wallet Special Interest Group (OWF-SW-SIG)<br/>
-v1.1.2<br/>
+v2.0<br/>
 6th August 2024<br/>
 Copyright (c) 2024 OpenWallet Foundation.<br/>
 <br/>
-These materials are made available under and are subject to the Creative Commons Attribution 4.0 International license (http://creativecommons.org/licenses/by/4.0/legalcode).<br/>
+These materials are made available under and are subject to the [Creative Commons Attribution 4.0 International license](http://creativecommons.org/licenses/by/4.0/legalcode).<br/>
 <br/>
 THESE MATERIALS ARE PROVIDED “AS IS.” The OpenWallet Foundation ("OWF") and its members and contributors (each of OWF, its members and contributors, a "OWF Party") expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user.<br/>
 <br/>
-IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THESE MATERIALS, ANY DELIVERABLE OR THE OWF GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+IN NO EVENT WILL ANY OWF PARTY BE LIABLE TO ANY OTHER PARTY FOR LOST PROFITS OR ANY FORM OF INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER FROM ANY CAUSES OF ACTION OF ANY KIND WITH RESPECT TO THESE MATERIALS, ANY DELIVERABLE OR THE OWF GOVERNING AGREEMENT, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, AND WHETHER OR NOT THE OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+<br/>
+To provide feedback, please open an issue at: [https://github.com/openwallet-foundation/safe-wallet-sig](https://github.com/openwallet-foundation/safe-wallet-sig/issues).<br/>
+<br/>
 
 ## Revision History
 
 | Version | Date | Changes | Authors |
 | ------- | -------------- | -------------------------- | --------------------- |
-| v1.1.2 | 6th August 2024 | Editorial changes and links | Tracy Kuhrt |
+| v2.0   | 6th August 2024 | Editorial changes and links <br/> Release | Drummond Reed <br/> Tracy Kuhrt |
 | v1.1.1 | 30th July 2024 | Formatting changes to make more readable | Stavros Kounis <br/> Tracy Kuhrt |
 | v1.1   | 16th July 2024 | Add front-matter; reformat for Markdown | Sean Bohan <br/> Tracy Kuhrt |
 | v1.0.2 | 10th July 2024 | Final editorial pass, add comments from Safe Wallet SIG | Juliana Cafik |
