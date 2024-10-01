@@ -4,6 +4,8 @@ v2.0<br/>
 6th August 2024<br/>
 Copyright (c) 2024 OpenWallet Foundation.<br/>
 <br/>
+These materials are a deliverable of the OWF community. If you have concerns or suggestions regarding the content, please file a pull request.<br/>
+<br/>
 These materials are made available under and are subject to the [Creative Commons Attribution 4.0 International license](http://creativecommons.org/licenses/by/4.0/legalcode).<br/>
 <br/>
 THESE MATERIALS ARE PROVIDED “AS IS.” The OpenWallet Foundation ("OWF") and its members and contributors (each of OWF, its members and contributors, a "OWF Party") expressly disclaim any warranties (express, implied, or otherwise), including implied warranties of merchantability, non-infringement, fitness for a particular purpose, or title, related to the materials. The entire risk as to implementing or otherwise using the materials is assumed by the implementer and user.<br/>
